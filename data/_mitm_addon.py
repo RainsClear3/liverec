@@ -1,7 +1,7 @@
 """Auto-generated mitmproxy addon — captures WeChat live stream URLs.
 
 Live page provides oid (stable room ID). FLV streams are mapped to oid
-via trtc_ number. Pending FLV URLs buffered until oid is known.
+via orig_ number in FLV URL path (unique per live room).
 """
 import sys, os, re, time, logging, json
 from urllib.parse import urlparse, parse_qs
@@ -80,9 +80,9 @@ class WeChatAddon:
             pass
 
     def _capture(self, url, headers):
-        # Extract trtc_ number — use as room_id directly
+        # Extract orig_ stream ID — unique per live room
         room_id = ""
-        m = re.search(r"trtc_(\d+)", url)
+        m = re.search(r"orig_(\d+)", url)
         if m:
             room_id = m.group(1)
         if not room_id:

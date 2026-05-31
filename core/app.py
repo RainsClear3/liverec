@@ -38,6 +38,17 @@ class App:
         self._loop = asyncio.get_running_loop()
         # Load configuration
         self.config_manager.load()
+
+        # Clean up stale WeChat entries from previous session
+        self.config_manager.streamers = [
+            s for s in self.config_manager.streamers if s.platform != "wechat"
+        ]
+        # Persist the cleaned config so old WeChat entries are removed from file
+        self.config_manager.save()
+        from platforms.wechat import WechatPlatform
+        with WechatPlatform._lock:
+            WechatPlatform._room_streams.clear()
+
         config = self.config_manager.app_config
 
         # Create HTTP client
@@ -152,21 +163,27 @@ class App:
         """Gracefully shut down all subsystems."""
         logger.info("Shutting down...")
 
+        # Stop sniffer first (restores system proxy)
+        self.stop_sniffer()
+
         if self.monitor:
             await self.monitor.stop()
         if self.engine:
             await self.engine.stop_all()
         if self._http_client:
             await self._http_client.close()
-        self.stop_sniffer()
 
-        # Remove WeChat streamers (not persisted)
-        self.config_manager.streamers = [
-            s for s in self.config_manager.streamers if s.platform != "wechat"
-        ]
+        # Remove ALL WeChat streamers and URL buffers
         from platforms.wechat import WechatPlatform
         with WechatPlatform._lock:
             WechatPlatform._room_streams.clear()
+        self.config_manager.streamers = [
+            s for s in self.config_manager.streamers if s.platform != "wechat"
+        ]
+        logger.info(f"Cleaned up WeChat entries, {len(self.config_manager.streamers)} streamers remaining")
+
+        self.config_manager.save()
+        logger.info("Shutdown complete")
 
         self.config_manager.save()
         logger.info("Shutdown complete")

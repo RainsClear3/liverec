@@ -1,7 +1,7 @@
 """WeChat Channels platform adapter — simplified.
 
-Each room identified by trtc_ number. No FFmpeg probe — latest URL used.
-Thumbnail captured via FFmpeg frame extraction.
+Each room identified by orig_ number (unique per live session).
+No FFmpeg probe — latest URL used. Thumbnail captured via FFmpeg.
 """
 
 import asyncio

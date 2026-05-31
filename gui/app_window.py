@@ -129,6 +129,12 @@ class MainWindow:
             toolbar, text="🔍 启动视频号嗅探", command=self._toggle_sniffer
         )
         self._sniffer_btn.pack(side=tk.LEFT, padx=2)
+        ttk.Separator(toolbar, orient=tk.VERTICAL).pack(
+            side=tk.LEFT, fill=tk.Y, padx=5, pady=2
+        )
+        ttk.Button(toolbar, text="❌ 退出", command=self._on_close).pack(
+            side=tk.LEFT, padx=2
+        )
 
         # Main content: Notebook (tabs) + Log
         main_pane = ttk.PanedWindow(self.root, orient=tk.VERTICAL)
@@ -266,9 +272,14 @@ class MainWindow:
             ).start()
 
     def _on_close(self):
-        """Handle window close — minimize to tray or quit."""
+        """Handle window close — ask quit or minimize."""
         if self._tray_icon:
-            self._minimize_to_tray()
+            if messagebox.askyesno("退出", "确定退出程序吗？\n（点否将最小化到托盘）"):
+                if self._tray_icon:
+                    self._tray_icon.stop()
+                self._quit()
+            else:
+                self._minimize_to_tray()
         else:
             self._quit()
 

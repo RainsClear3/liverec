@@ -84,7 +84,7 @@ class ConfigManager:
         """Save current configuration to JSON file."""
         data = {
             "config": self.app_config.to_dict(),
-            "user": [s.to_dict() for s in self.streamers],
+            "user": [s.to_dict() for s in self.streamers if s.platform != "wechat"],
         }
         try:
             os.makedirs(os.path.dirname(self.config_path) or ".", exist_ok=True)

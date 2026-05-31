@@ -57,14 +57,20 @@ class StreamSniffer:
             os.makedirs(DATA_DIR, exist_ok=True)
             self._callbacks = [callback]
 
-            # Step 1: Kill existing WeChat
+            # Step 1: Kill existing WeChat and mitmdump
             self._kill_wechat()
+            self._kill_mitmdump()
 
             # Step 2: Install mitmproxy CA cert
             self._install_mitm_ca()
 
-            # Step 3: Write addon script
+            # Step 3: Write addon script and clear old capture data
             self._write_addon()
+            try:
+                if os.path.exists(CAPTURE_FILE):
+                    os.remove(CAPTURE_FILE)
+            except Exception:
+                pass
 
             # Step 4: Set system proxy BEFORE starting mitmdump
             self._set_system_proxy()
@@ -75,6 +81,12 @@ class StreamSniffer:
                 logger.error("mitmdump not found")
                 return False
 
+            # CDN domains bypass proxy — stream data goes directly to WeChat
+            cdn_bypass = (
+                ".*wxlivecdn\\.com,"
+                ".*myqcloud\\.com,"
+                ".*live\\.video\\.qq\\.com"
+            )
             cmd = [
                 mitmdump,
                 "--mode", "regular",
@@ -83,6 +95,7 @@ class StreamSniffer:
                 "--set", "connection_strategy=lazy",
                 "--set", "ssl_insecure=true",
                 "--set", "upstream_cert=false",
+                "--set", f"ignore_hosts={cdn_bypass}",
             ]
 
             self._mitmprocess = subprocess.Popen(
@@ -159,6 +172,20 @@ class StreamSniffer:
             )
             time.sleep(2)
             logger.info("WeChat processes killed")
+        except Exception:
+            pass
+
+    def _kill_mitmdump(self):
+        try:
+            subprocess.run(
+                ["taskkill", "/F", "/IM", "mitmdump.exe", "/T"],
+                capture_output=True, timeout=5,
+            )
+            subprocess.run(
+                ["taskkill", "/F", "/IM", "mitmproxy.exe", "/T"],
+                capture_output=True, timeout=5,
+            )
+            time.sleep(1)
         except Exception:
             pass
 
@@ -287,7 +314,7 @@ class StreamSniffer:
         script = f'''"""Auto-generated mitmproxy addon — captures WeChat live stream URLs.
 
 Live page provides oid (stable room ID). FLV streams are mapped to oid
-via trtc_ number. Pending FLV URLs buffered until oid is known.
+via orig_ number in FLV URL path (unique per live room).
 """
 import sys, os, re, time, logging, json
 from urllib.parse import urlparse, parse_qs
@@ -366,9 +393,9 @@ class WeChatAddon:
             pass
 
     def _capture(self, url, headers):
-        # Extract trtc_ number — use as room_id directly
+        # Extract orig_ stream ID — unique per live room
         room_id = ""
-        m = re.search(r"trtc_(\\d+)", url)
+        m = re.search(r"orig_(\\d+)", url)
         if m:
             room_id = m.group(1)
         if not room_id:
