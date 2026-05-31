@@ -46,6 +46,7 @@ class StreamSniffer:
         self._callbacks: list[Callable] = []
         self._original_proxy_enabled: Optional[int] = None
         self._original_proxy_server: Optional[str] = None
+        self._original_auto_config_url: Optional[str] = None
 
     def start(self, callback: Callable[[str, dict, dict], None]) -> bool:
         """Start the sniffer: set proxy -> start mitmdump -> launch WeChat.
@@ -57,22 +58,18 @@ class StreamSniffer:
             os.makedirs(DATA_DIR, exist_ok=True)
             self._callbacks = [callback]
 
-            # Step 1: Kill existing WeChat and mitmdump
+            # Step 1: Kill existing WeChat and mitmdump, restore system proxy
             self._kill_wechat()
             self._kill_mitmdump()
+            self._restore_system_proxy()  # Clean up leftover proxy from previous run
 
             # Step 2: Install mitmproxy CA cert
             self._install_mitm_ca()
 
-            # Step 3: Write addon script and clear old capture data
+            # Step 3: Write addon script
             self._write_addon()
-            try:
-                if os.path.exists(CAPTURE_FILE):
-                    os.remove(CAPTURE_FILE)
-            except Exception:
-                pass
 
-            # Step 4: Set system proxy BEFORE starting mitmdump
+            # Step 4: Set PAC-based selective proxy (only WeChat domains)
             self._set_system_proxy()
 
             # Step 5: Start mitmdump as regular HTTP proxy
@@ -81,21 +78,18 @@ class StreamSniffer:
                 logger.error("mitmdump not found")
                 return False
 
-            # CDN domains bypass proxy — stream data goes directly to WeChat
-            cdn_bypass = (
-                ".*wxlivecdn\\.com,"
-                ".*myqcloud\\.com,"
-                ".*live\\.video\\.qq\\.com"
-            )
+            # Only MITM WeChat domains — all other traffic passes through unmodified
             cmd = [
                 mitmdump,
                 "--mode", "regular",
                 "--listen-port", "8080",
                 "-s", ADDON_SCRIPT,
-                "--set", "connection_strategy=lazy",
-                "--set", "ssl_insecure=true",
-                "--set", "upstream_cert=false",
-                "--set", f"ignore_hosts={cdn_bypass}",
+                "--allow-hosts", ".*channels\\.weixin\\.qq\\.com",
+                "--allow-hosts", ".*finder\\.video\\.qq\\.com",
+                "--allow-hosts", ".*findermp\\.video\\.qq\\.com",
+                "--allow-hosts", ".*finder\\.qq\\.com",
+                "--allow-hosts", ".*wxsnsdythumb\\.video\\.qq\\.com",
+                "--allow-hosts", ".*wxlivecdn\\.com",
             ]
 
             self._mitmprocess = subprocess.Popen(
@@ -190,18 +184,13 @@ class StreamSniffer:
             pass
 
     def _launch_wechat(self):
-        """Launch WeChat with proxy, cert bypass, and QUIC disabled."""
+        """Launch WeChat with cert bypass (proxy via PAC file, not command-line)."""
         if not os.path.isfile(WECHAT_EXE):
             logger.warning(f"WeChat not found at {WECHAT_EXE}")
             return
         try:
             self._wechat_process = subprocess.Popen(
-                [
-                    WECHAT_EXE,
-                    "--ignore-certificate-errors",
-                    f"--proxy-server={PROXY_ADDR}",
-                    "--disable-quic",
-                ],
+                [WECHAT_EXE, "--ignore-certificate-errors"],
                 creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
             )
             logger.info(f"WeChat launched (PID={self._wechat_process.pid})")
@@ -211,7 +200,7 @@ class StreamSniffer:
     # --- System proxy management ---
 
     def _set_system_proxy(self):
-        """Enable Windows system proxy pointing to mitmproxy."""
+        """Set system proxy to point to mitmproxy."""
         if not winreg or platform.system() != "Windows":
             return
         try:
@@ -221,34 +210,30 @@ class StreamSniffer:
                 0,
                 winreg.KEY_ALL_ACCESS,
             )
-            # Backup current settings
             try:
-                self._original_proxy_enabled, _ = winreg.QueryValueEx(
-                    key, "ProxyEnable"
-                )
+                self._original_proxy_enabled, _ = winreg.QueryValueEx(key, "ProxyEnable")
             except FileNotFoundError:
                 self._original_proxy_enabled = 0
             try:
-                self._original_proxy_server, _ = winreg.QueryValueEx(
-                    key, "ProxyServer"
-                )
+                self._original_proxy_server, _ = winreg.QueryValueEx(key, "ProxyServer")
             except FileNotFoundError:
                 self._original_proxy_server = ""
+            # Clear PAC if set
+            try:
+                self._original_auto_config_url, _ = winreg.QueryValueEx(key, "AutoConfigURL")
+                winreg.DeleteValue(key, "AutoConfigURL")
+            except FileNotFoundError:
+                self._original_auto_config_url = ""
 
-            # Set proxy
-            winreg.SetValueEx(
-                key, "ProxyServer", 0, winreg.REG_SZ, PROXY_ADDR
-            )
-            winreg.SetValueEx(
-                key, "ProxyEnable", 0, winreg.REG_DWORD, 1
-            )
+            winreg.SetValueEx(key, "ProxyServer", 0, winreg.REG_SZ, PROXY_ADDR)
+            winreg.SetValueEx(key, "ProxyEnable", 0, winreg.REG_DWORD, 1)
             winreg.CloseKey(key)
             logger.info(f"System proxy set to {PROXY_ADDR}")
         except Exception as e:
             logger.warning(f"Failed to set system proxy: {e}")
 
     def _restore_system_proxy(self):
-        """Restore Windows system proxy to original settings."""
+        """Restore system proxy to original settings."""
         if not winreg or platform.system() != "Windows":
             return
         if self._original_proxy_enabled is None:
@@ -260,20 +245,15 @@ class StreamSniffer:
                 0,
                 winreg.KEY_ALL_ACCESS,
             )
-            winreg.SetValueEx(
-                key,
-                "ProxyEnable",
-                0,
-                winreg.REG_DWORD,
-                self._original_proxy_enabled,
-            )
-            winreg.SetValueEx(
-                key,
-                "ProxyServer",
-                0,
-                winreg.REG_SZ,
-                self._original_proxy_server or "",
-            )
+            winreg.SetValueEx(key, "ProxyEnable", 0, winreg.REG_DWORD, self._original_proxy_enabled)
+            winreg.SetValueEx(key, "ProxyServer", 0, winreg.REG_SZ, self._original_proxy_server or "")
+            if self._original_auto_config_url:
+                winreg.SetValueEx(key, "AutoConfigURL", 0, winreg.REG_SZ, self._original_auto_config_url)
+            else:
+                try:
+                    winreg.DeleteValue(key, "AutoConfigURL")
+                except FileNotFoundError:
+                    pass
             winreg.CloseKey(key)
             logger.info("System proxy restored")
         except Exception as e:
@@ -440,6 +420,7 @@ addons = [WeChatAddon()]
                 if os.path.exists(CAPTURE_FILE):
                     size = os.path.getsize(CAPTURE_FILE)
                     if size > last_size:
+                        logger.info(f"File watcher: {size - last_size} new bytes in capture file")
                         with open(CAPTURE_FILE, "r", encoding="utf-8") as f:
                             f.seek(last_size)
                             for line in f:
@@ -448,16 +429,16 @@ addons = [WeChatAddon()]
                                     continue
                                 try:
                                     data = json.loads(line)
-                                    self._on_url_captured(
-                                        data["url"],
-                                        data.get("h", {}),
-                                        data.get("info", {}),
-                                    )
-                                except (json.JSONDecodeError, KeyError):
-                                    pass  # skip malformed lines
+                                    url = data.get("url", "")
+                                    info = data.get("info", {})
+                                    rid = info.get("room_id", "")
+                                    logger.info(f"File watcher: parsed room={rid} url={url[:60]}")
+                                    self._on_url_captured(url, data.get("h", {}), info)
+                                except (json.JSONDecodeError, KeyError) as e:
+                                    logger.warning(f"File watcher: parse error: {e}")
                         last_size = size
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning(f"File watcher error: {e}")
             time.sleep(1)
 
     def _mitm_output_reader(self):

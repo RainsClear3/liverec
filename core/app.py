@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+import os
 import threading
 
 from core.config import ConfigManager
@@ -48,6 +49,13 @@ class App:
         from platforms.wechat import WechatPlatform
         with WechatPlatform._lock:
             WechatPlatform._room_streams.clear()
+        # Clear old capture file
+        try:
+            cap_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "wechat_captured.txt")
+            if os.path.exists(cap_file):
+                os.remove(cap_file)
+        except Exception:
+            pass
 
         config = self.config_manager.app_config
 

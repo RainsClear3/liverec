@@ -11167,3 +11167,818 @@ Please navigate to a video channel live page.
 [2026-06-01 01:01:28] DEBUG Config saved successfully
 [2026-06-01 01:01:28] INFO  Shutdown complete
 [2026-06-01 01:01:28] INFO  Application exited
+[2026-06-01 01:05:07] INFO  ============================================================
+[2026-06-01 01:05:07] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:05:07] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:05:07] INFO  Project root: D:\liverec
+[2026-06-01 01:05:07] INFO  ============================================================
+[2026-06-01 01:05:07] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:05:07] DEBUG Config saved successfully
+[2026-06-01 01:05:07] INFO  Monitor started (interval=15s)
+[2026-06-01 01:05:07] INFO  Application initialized successfully
+[2026-06-01 01:05:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:12] INFO  WeChat processes killed
+[2026-06-01 01:05:13] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 01:05:16] INFO  WeChat launched (PID=28720)
+[2026-06-01 01:05:16] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:05:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:25] DEBUG mitmproxy: [01:05:25.622] [Stream] room=2042918921673498846 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:25] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:25] INFO  New live room: 视频号_20429189 (room=2042918921673498846)
+[2026-06-01 01:05:25] INFO  Capturing thumbnail for room 2042918921673498846...
+[2026-06-01 01:05:25] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291892...
+[2026-06-01 01:05:25] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247125638.jpg
+[2026-06-01 01:05:25] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247125638.jpg
+[2026-06-01 01:05:25] INFO  Thumbnail ready: room=2042918921673498846 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247125638.jpg
+[2026-06-01 01:05:25] INFO  Thumbnail loaded: 2042918921673498846 ((200, 112))
+[2026-06-01 01:05:25] INFO  Thumbnail applied to card: 2042918921673498846
+[2026-06-01 01:05:27] DEBUG mitmproxy: [01:05:27.080][127.0.0.1:61095] 127.0.0.1:61095: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:05:27] DEBUG mitmproxy: [01:05:27.095][127.0.0.1:49255] 127.0.0.1:49255: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:05:30] DEBUG mitmproxy: [01:05:30.044] [Stream] room=2042918921673498846 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:30] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:30] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:31] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:31] DEBUG mitmproxy: [01:05:31.463] [Stream] room=2042918847743561882 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918847743561882_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:31] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918847743561882_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:31] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:31] INFO  New live room: 视频号_20429188 (room=2042918847743561882)
+[2026-06-01 01:05:31] INFO  Capturing thumbnail for room 2042918847743561882...
+[2026-06-01 01:05:31] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291884...
+[2026-06-01 01:05:32] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247131639.jpg
+[2026-06-01 01:05:32] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247131639.jpg
+[2026-06-01 01:05:32] INFO  Thumbnail ready: room=2042918847743561882 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247131639.jpg
+[2026-06-01 01:05:32] INFO  Thumbnail loaded: 2042918847743561882 ((200, 112))
+[2026-06-01 01:05:32] INFO  Thumbnail applied to card: 2042918847743561882
+[2026-06-01 01:05:32] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:33] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:33] DEBUG mitmproxy: [01:05:33.369] [Stream] room=2078947712742195359 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:33] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:33] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:33] DEBUG mitmproxy: [01:05:33.517] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:33] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:05:33] INFO  New live room: 视频号_20789477 (room=2078947712742195359)
+[2026-06-01 01:05:33] INFO  Capturing thumbnail for room 2078947712742195359...
+[2026-06-01 01:05:33] INFO  New live room: 视频号_20429188 (room=2042918898441347240)
+[2026-06-01 01:05:33] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894771...
+[2026-06-01 01:05:33] INFO  Capturing thumbnail for room 2042918898441347240...
+[2026-06-01 01:05:33] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889...
+[2026-06-01 01:05:33] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:33] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247133641.jpg
+[2026-06-01 01:05:33] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247133641.jpg
+[2026-06-01 01:05:33] INFO  Thumbnail ready: room=2042918898441347240 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247133641.jpg
+[2026-06-01 01:05:33] INFO  Thumbnail loaded: 2042918898441347240 ((200, 112))
+[2026-06-01 01:05:33] INFO  Thumbnail applied to card: 2042918898441347240
+[2026-06-01 01:05:33] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247133641.jpg
+[2026-06-01 01:05:33] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247133641.jpg
+[2026-06-01 01:05:33] INFO  Thumbnail ready: room=2078947712742195359 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247133641.jpg
+[2026-06-01 01:05:34] INFO  Thumbnail loaded: 2078947712742195359 ((200, 112))
+[2026-06-01 01:05:34] INFO  Thumbnail applied to card: 2078947712742195359
+[2026-06-01 01:05:34] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:35] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:37] DEBUG mitmproxy: [01:05:37.075] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_jh514.flv?cdntagname=jh514&co
+[2026-06-01 01:05:37] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_jh514.flv?cdntagname=jh514&co
+[2026-06-01 01:05:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:40] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:05:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:05:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:25] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:25] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:06:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:07:44] INFO  System proxy restored
+[2026-06-01 01:07:44] INFO  Sniffer stopped
+[2026-06-01 01:07:46] INFO  Shutting down...
+[2026-06-01 01:07:46] INFO  Monitor stopped
+[2026-06-01 01:07:46] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:07:46] DEBUG Config saved successfully
+[2026-06-01 01:07:46] INFO  Shutdown complete
+[2026-06-01 01:07:46] DEBUG Config saved successfully
+[2026-06-01 01:07:46] INFO  Shutdown complete
+[2026-06-01 01:07:46] INFO  Shutting down...
+[2026-06-01 01:07:46] INFO  Monitor stopped
+[2026-06-01 01:07:46] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:07:46] DEBUG Config saved successfully
+[2026-06-01 01:07:46] INFO  Shutdown complete
+[2026-06-01 01:07:46] DEBUG Config saved successfully
+[2026-06-01 01:07:46] INFO  Shutdown complete
+[2026-06-01 01:07:46] INFO  Application exited
+[2026-06-01 01:12:57] INFO  ============================================================
+[2026-06-01 01:12:57] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:12:57] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:12:57] INFO  Project root: D:\liverec
+[2026-06-01 01:12:57] INFO  ============================================================
+[2026-06-01 01:12:57] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:12:57] DEBUG Config saved successfully
+[2026-06-01 01:12:57] INFO  Monitor started (interval=15s)
+[2026-06-01 01:12:57] INFO  Application initialized successfully
+[2026-06-01 01:12:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:12:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:12:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:12:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:03] INFO  WeChat processes killed
+[2026-06-01 01:13:04] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 01:13:07] INFO  WeChat launched (PID=10428)
+[2026-06-01 01:13:07] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:13:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:18] DEBUG mitmproxy: [01:13:18.086][127.0.0.1:60755] 127.0.0.1:60755: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:13:18] DEBUG mitmproxy: [01:13:18.114][127.0.0.1:60788] 127.0.0.1:60788: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:13:18] DEBUG mitmproxy: [01:13:18.933] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:13:18] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:13:19] INFO  New live room: 视频号_20429188 (room=2042918898441347240)
+[2026-06-01 01:13:19] INFO  Capturing thumbnail for room 2042918898441347240...
+[2026-06-01 01:13:19] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889...
+[2026-06-01 01:13:19] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247599549.jpg
+[2026-06-01 01:13:19] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247599549.jpg
+[2026-06-01 01:13:19] INFO  Thumbnail ready: room=2042918898441347240 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780247599549.jpg
+[2026-06-01 01:13:19] INFO  Thumbnail loaded: 2042918898441347240 ((200, 112))
+[2026-06-01 01:13:19] INFO  Thumbnail applied to card: 2042918898441347240
+[2026-06-01 01:13:26] DEBUG mitmproxy: [01:13:26.590] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_jh514.flv?cdntagname=jh514&co
+[2026-06-01 01:13:26] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_jh514.flv?cdntagname=jh514&co
+[2026-06-01 01:13:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:37] INFO  System proxy restored
+[2026-06-01 01:13:37] INFO  Sniffer stopped
+[2026-06-01 01:13:39] INFO  Shutting down...
+[2026-06-01 01:13:39] INFO  Monitor stopped
+[2026-06-01 01:13:39] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:13:39] DEBUG Config saved successfully
+[2026-06-01 01:13:39] INFO  Shutdown complete
+[2026-06-01 01:13:39] DEBUG Config saved successfully
+[2026-06-01 01:13:39] INFO  Shutdown complete
+[2026-06-01 01:13:40] INFO  Shutting down...
+[2026-06-01 01:13:40] INFO  Monitor stopped
+[2026-06-01 01:13:40] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:13:40] DEBUG Config saved successfully
+[2026-06-01 01:13:40] INFO  Shutdown complete
+[2026-06-01 01:13:40] DEBUG Config saved successfully
+[2026-06-01 01:13:40] INFO  Shutdown complete
+[2026-06-01 01:13:40] INFO  Application exited
+[2026-06-01 01:13:42] INFO  ============================================================
+[2026-06-01 01:13:42] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:13:42] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:13:42] INFO  Project root: D:\liverec
+[2026-06-01 01:13:42] INFO  ============================================================
+[2026-06-01 01:13:42] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:13:42] DEBUG Config saved successfully
+[2026-06-01 01:13:42] INFO  Monitor started (interval=15s)
+[2026-06-01 01:13:42] INFO  Application initialized successfully
+[2026-06-01 01:13:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:47] INFO  WeChat processes killed
+[2026-06-01 01:13:48] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 01:13:51] INFO  WeChat launched (PID=24252)
+[2026-06-01 01:13:51] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:13:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:13:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:16] DEBUG mitmproxy: [01:14:15.828][127.0.0.1:61267] 127.0.0.1:61267: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:14:16] DEBUG mitmproxy: [01:14:15.858][127.0.0.1:55797] 127.0.0.1:55797: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:14:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:14:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.111][127.0.0.1:62478] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.118][127.0.0.1:62491] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.124][127.0.0.1:62485] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.134][127.0.0.1:62492] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.134][127.0.0.1:62479] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.137][127.0.0.1:62481] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.141][127.0.0.1:62477] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.141][127.0.0.1:62486] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.141][127.0.0.1:62483] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.141][127.0.0.1:62484] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.144][127.0.0.1:62489] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.147][127.0.0.1:62482] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.149][127.0.0.1:62488] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:15] DEBUG mitmproxy: [01:15:15.149][127.0.0.1:62480] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:16] DEBUG mitmproxy: [01:15:15.154][127.0.0.1:62487] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:16] DEBUG mitmproxy: [01:15:15.156][127.0.0.1:62490] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:16] DEBUG mitmproxy: [01:15:15.177][127.0.0.1:62509] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.221][127.0.0.1:60360] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.230][127.0.0.1:60362] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.237][127.0.0.1:60364] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.251][127.0.0.1:60365] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.252][127.0.0.1:60368] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.252][127.0.0.1:60373] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.257][127.0.0.1:60370] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.258][127.0.0.1:60374] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.258][127.0.0.1:60371] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.260][127.0.0.1:60372] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.260][127.0.0.1:60375] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.260][127.0.0.1:60369] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.268][127.0.0.1:60361] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.271][127.0.0.1:60363] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.271][127.0.0.1:60367] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.271][127.0.0.1:60366] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.598][127.0.0.1:52847] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:21.665][127.0.0.1:52849] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:22] DEBUG mitmproxy: [01:15:22.441][127.0.0.1:52851] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:24] DEBUG mitmproxy: [01:15:22.829][127.0.0.1:52853] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:24] DEBUG mitmproxy: [01:15:23.667][127.0.0.1:52855] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:24] DEBUG mitmproxy: [01:15:24.086][127.0.0.1:52857] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:24] DEBUG mitmproxy: [01:15:24.507][127.0.0.1:52859] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.681][127.0.0.1:52243] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.682][127.0.0.1:52249] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.685][127.0.0.1:52240] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.692][127.0.0.1:52246] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.698][127.0.0.1:52251] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.707][127.0.0.1:52242] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.707][127.0.0.1:52252] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.712][127.0.0.1:52241] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.713][127.0.0.1:52244] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.718][127.0.0.1:52253] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.719][127.0.0.1:52248] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.719][127.0.0.1:52247] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.720][127.0.0.1:52256] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.721][127.0.0.1:52250] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.721][127.0.0.1:52245] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:30] DEBUG mitmproxy: [01:15:30.722][127.0.0.1:52255] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:30.730][127.0.0.1:52254] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.567][127.0.0.1:60130] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.574][127.0.0.1:60145] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.589][127.0.0.1:60131] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.590][127.0.0.1:60141] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.596][127.0.0.1:60133] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.597][127.0.0.1:60134] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.906][127.0.0.1:60132] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.908][127.0.0.1:60143] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.909][127.0.0.1:60136] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:36] DEBUG mitmproxy: [01:15:36.909][127.0.0.1:60144] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.910][127.0.0.1:60135] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.911][127.0.0.1:60138] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.911][127.0.0.1:60137] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.911][127.0.0.1:60142] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.912][127.0.0.1:60139] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.912][127.0.0.1:60140] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:36.980][127.0.0.1:60162] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:37.009][127.0.0.1:60164] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:37.778][127.0.0.1:60166] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:38.165][127.0.0.1:60168] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:39.048][127.0.0.1:60170] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:15:44] DEBUG mitmproxy: [01:15:41.936][127.0.0.1:55341] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for github.com
+[2026-06-01 01:15:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:15:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:04] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:51] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:51] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:51] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:16:51] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:04] DEBUG mitmproxy: [01:17:04.259][127.0.0.1:52299] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for github.com
+[2026-06-01 01:17:04] DEBUG mitmproxy: [01:17:04.930][127.0.0.1:54179] error establishing server connection: [Errno 11001] getaddrinfo failed
+[2026-06-01 01:17:04] DEBUG mitmproxy: << [Errno 11001] getaddrinfo failed
+[2026-06-01 01:17:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:13] DEBUG mitmproxy: [01:17:08.833][127.0.0.1:55999] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:17:13] DEBUG mitmproxy: [01:17:09.339][127.0.0.1:56001] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for token-plan
+[2026-06-01 01:17:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:29] DEBUG mitmproxy: [01:17:16.899][127.0.0.1:64029] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for github.com
+[2026-06-01 01:17:38] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:38] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:38] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:38] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:53] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:53] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:53] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:17:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:18:06] DEBUG mitmproxy: [01:18:06.151][127.0.0.1:51322] Client TLS handshake failed. The client disconnected during the handshake. If this happens consistently for github.com
+[2026-06-01 01:18:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:18:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:18:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:18:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:18:09] INFO  System proxy restored
+[2026-06-01 01:18:10] INFO  Sniffer stopped
+[2026-06-01 01:18:18] INFO  Shutting down...
+[2026-06-01 01:18:18] INFO  Monitor stopped
+[2026-06-01 01:18:18] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:18:18] DEBUG Config saved successfully
+[2026-06-01 01:18:18] INFO  Shutdown complete
+[2026-06-01 01:18:18] DEBUG Config saved successfully
+[2026-06-01 01:18:18] INFO  Shutdown complete
+[2026-06-01 01:18:18] INFO  Shutting down...
+[2026-06-01 01:18:18] INFO  Monitor stopped
+[2026-06-01 01:18:18] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:18:18] DEBUG Config saved successfully
+[2026-06-01 01:18:18] INFO  Shutdown complete
+[2026-06-01 01:18:18] DEBUG Config saved successfully
+[2026-06-01 01:18:18] INFO  Shutdown complete
+[2026-06-01 01:18:18] INFO  Application exited
+[2026-06-01 01:27:09] INFO  ============================================================
+[2026-06-01 01:27:09] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:27:09] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:27:09] INFO  Project root: D:\liverec
+[2026-06-01 01:27:09] INFO  ============================================================
+[2026-06-01 01:27:09] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:27:09] DEBUG Config saved successfully
+[2026-06-01 01:27:09] INFO  Monitor started (interval=15s)
+[2026-06-01 01:27:09] INFO  Application initialized successfully
+[2026-06-01 01:27:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:09] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:14] INFO  WeChat processes killed
+[2026-06-01 01:27:18] INFO  WeChat launched (PID=24952)
+[2026-06-01 01:27:18] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:27:25] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:25] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:25] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:25] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:27:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:12] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:28:56] INFO  Sniffer stopped
+[2026-06-01 01:28:58] INFO  Shutting down...
+[2026-06-01 01:28:58] INFO  Monitor stopped
+[2026-06-01 01:28:58] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:28:58] DEBUG Config saved successfully
+[2026-06-01 01:28:58] INFO  Shutdown complete
+[2026-06-01 01:28:58] DEBUG Config saved successfully
+[2026-06-01 01:28:58] INFO  Shutdown complete
+[2026-06-01 01:28:58] INFO  Shutting down...
+[2026-06-01 01:28:58] INFO  Monitor stopped
+[2026-06-01 01:28:58] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:28:58] DEBUG Config saved successfully
+[2026-06-01 01:28:58] INFO  Shutdown complete
+[2026-06-01 01:28:58] DEBUG Config saved successfully
+[2026-06-01 01:28:58] INFO  Shutdown complete
+[2026-06-01 01:28:58] INFO  Application exited
+[2026-06-01 01:29:00] INFO  ============================================================
+[2026-06-01 01:29:00] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:29:00] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:29:00] INFO  Project root: D:\liverec
+[2026-06-01 01:29:00] INFO  ============================================================
+[2026-06-01 01:29:00] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:29:00] DEBUG Config saved successfully
+[2026-06-01 01:29:00] INFO  Monitor started (interval=15s)
+[2026-06-01 01:29:00] INFO  Application initialized successfully
+[2026-06-01 01:29:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:15] INFO  WeChat processes killed
+[2026-06-01 01:29:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:20] INFO  WeChat launched (PID=47744)
+[2026-06-01 01:29:20] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:29:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:29:38] INFO  Sniffer stopped
+[2026-06-01 01:29:40] INFO  Shutting down...
+[2026-06-01 01:29:40] INFO  Monitor stopped
+[2026-06-01 01:29:40] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:29:40] DEBUG Config saved successfully
+[2026-06-01 01:29:40] INFO  Shutdown complete
+[2026-06-01 01:29:40] DEBUG Config saved successfully
+[2026-06-01 01:29:40] INFO  Shutdown complete
+[2026-06-01 01:29:40] INFO  Shutting down...
+[2026-06-01 01:29:40] INFO  Monitor stopped
+[2026-06-01 01:29:40] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:29:40] DEBUG Config saved successfully
+[2026-06-01 01:29:40] INFO  Shutdown complete
+[2026-06-01 01:29:40] DEBUG Config saved successfully
+[2026-06-01 01:29:40] INFO  Shutdown complete
+[2026-06-01 01:29:40] INFO  Application exited
+[2026-06-01 01:31:26] INFO  ============================================================
+[2026-06-01 01:31:26] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:31:26] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:31:26] INFO  Project root: D:\liverec
+[2026-06-01 01:31:26] INFO  ============================================================
+[2026-06-01 01:31:26] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:31:26] DEBUG Config saved successfully
+[2026-06-01 01:31:26] INFO  Monitor started (interval=15s)
+[2026-06-01 01:31:26] INFO  Application initialized successfully
+[2026-06-01 01:31:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:31] INFO  WeChat processes killed
+[2026-06-01 01:31:33] INFO  PAC server started on 127.0.0.1:8089
+[2026-06-01 01:31:33] INFO  PAC proxy set: http://127.0.0.1:8089/proxy.pac
+[2026-06-01 01:31:36] INFO  WeChat launched (PID=37608)
+[2026-06-01 01:31:36] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:31:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:31:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:32:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:17] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:33:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:08] INFO  ============================================================
+[2026-06-01 01:34:08] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:34:08] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:34:08] INFO  Project root: D:\liverec
+[2026-06-01 01:34:08] INFO  ============================================================
+[2026-06-01 01:34:08] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:34:08] DEBUG Config saved successfully
+[2026-06-01 01:34:08] INFO  Monitor started (interval=15s)
+[2026-06-01 01:34:08] INFO  Application initialized successfully
+[2026-06-01 01:34:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:15] INFO  WeChat processes killed
+[2026-06-01 01:34:17] INFO  PAC server started on 127.0.0.1:8089
+[2026-06-01 01:34:17] INFO  PAC proxy set: http://127.0.0.1:8089/proxy.pac
+[2026-06-01 01:34:20] INFO  WeChat launched (PID=11200)
+[2026-06-01 01:34:20] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:34:24] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:24] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:24] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:24] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:48] DEBUG mitmproxy: 127.0.0.1:64358: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:34:55] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:55] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:55] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:34:55] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:13] INFO  System proxy restored
+[2026-06-01 01:35:13] INFO  Sniffer stopped
+[2026-06-01 01:35:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:57] INFO  WeChat processes killed
+[2026-06-01 01:35:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:35:59] INFO  PAC server started on 127.0.0.1:8089
+[2026-06-01 01:35:59] INFO  PAC proxy set: http://127.0.0.1:8089/proxy.pac
+[2026-06-01 01:36:02] INFO  WeChat launched (PID=48264)
+[2026-06-01 01:36:02] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:36:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:22] DEBUG mitmproxy: 127.0.0.1:60035: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:36:26] DEBUG mitmproxy: 127.0.0.1:60035: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:36:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:36:45] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:01] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:32] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:37:48] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:03] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:19] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:34] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:35] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:50] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:50] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:50] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:38:50] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:06] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:22] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:36] INFO  System proxy restored
+[2026-06-01 01:39:36] INFO  Sniffer stopped
+[2026-06-01 01:39:37] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:37] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:37] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:37] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:38] INFO  Shutting down...
+[2026-06-01 01:39:38] INFO  Monitor stopped
+[2026-06-01 01:39:38] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:39:38] DEBUG Config saved successfully
+[2026-06-01 01:39:38] INFO  Shutdown complete
+[2026-06-01 01:39:38] DEBUG Config saved successfully
+[2026-06-01 01:39:38] INFO  Shutdown complete
+[2026-06-01 01:39:38] INFO  Shutting down...
+[2026-06-01 01:39:38] INFO  Monitor stopped
+[2026-06-01 01:39:38] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:39:38] DEBUG Config saved successfully
+[2026-06-01 01:39:38] INFO  Shutdown complete
+[2026-06-01 01:39:38] DEBUG Config saved successfully
+[2026-06-01 01:39:38] INFO  Shutdown complete
+[2026-06-01 01:39:38] INFO  Application exited
+[2026-06-01 01:39:40] INFO  ============================================================
+[2026-06-01 01:39:40] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:39:40] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:39:40] INFO  Project root: D:\liverec
+[2026-06-01 01:39:40] INFO  ============================================================
+[2026-06-01 01:39:40] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:39:40] DEBUG Config saved successfully
+[2026-06-01 01:39:40] INFO  Monitor started (interval=15s)
+[2026-06-01 01:39:40] INFO  Application initialized successfully
+[2026-06-01 01:39:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:40] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:44] INFO  WeChat processes killed
+[2026-06-01 01:39:46] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 01:39:49] INFO  WeChat launched (PID=35320)
+[2026-06-01 01:39:49] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:39:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:39:56] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:04] DEBUG mitmproxy: [01:40:04.645][127.0.0.1:58974] 127.0.0.1:58974: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:40:04] DEBUG mitmproxy: [01:40:04.685][127.0.0.1:58986] 127.0.0.1:58986: HTTP/2 protocol error: Received header value surrounded by whitespace b'Mozilla/5.0 (Windows NT 10.0;
+[2026-06-01 01:40:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:32] DEBUG mitmproxy: 127.0.0.1:58981: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:40:32] DEBUG mitmproxy: 127.0.0.1:61055: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:40:32] DEBUG mitmproxy: 127.0.0.1:58981: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:40:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:40:46] INFO  System proxy restored
+[2026-06-01 01:40:46] INFO  Sniffer stopped
+[2026-06-01 01:40:47] INFO  Shutting down...
+[2026-06-01 01:40:47] INFO  Monitor stopped
+[2026-06-01 01:40:47] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:40:47] DEBUG Config saved successfully
+[2026-06-01 01:40:47] INFO  Shutdown complete
+[2026-06-01 01:40:47] DEBUG Config saved successfully
+[2026-06-01 01:40:47] INFO  Shutdown complete
+[2026-06-01 01:40:47] INFO  Shutting down...
+[2026-06-01 01:40:47] INFO  Monitor stopped
+[2026-06-01 01:40:47] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:40:47] DEBUG Config saved successfully
+[2026-06-01 01:40:47] INFO  Shutdown complete
+[2026-06-01 01:40:47] DEBUG Config saved successfully
+[2026-06-01 01:40:47] INFO  Shutdown complete
+[2026-06-01 01:40:47] INFO  Application exited
+[2026-06-01 01:42:10] INFO  ============================================================
+[2026-06-01 01:42:10] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:42:10] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:42:10] INFO  Project root: D:\liverec
+[2026-06-01 01:42:10] INFO  ============================================================
+[2026-06-01 01:42:10] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:42:10] DEBUG Config saved successfully
+[2026-06-01 01:42:10] INFO  Monitor started (interval=15s)
+[2026-06-01 01:42:10] INFO  Application initialized successfully
+[2026-06-01 01:42:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:11] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:16] INFO  WeChat processes killed
+[2026-06-01 01:42:17] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 01:42:20] INFO  WeChat launched (PID=41116)
+[2026-06-01 01:42:20] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:42:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:36] DEBUG mitmproxy: [01:42:36.753] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:36] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:36] INFO  File watcher: 2071 new bytes in capture file
+[2026-06-01 01:42:36] INFO  File watcher: parsed room=2042918898441347240 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889
+[2026-06-01 01:42:36] INFO  New live room: 视频号_20429188 (room=2042918898441347240)
+[2026-06-01 01:42:36] INFO  Capturing thumbnail for room 2042918898441347240...
+[2026-06-01 01:42:36] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889...
+[2026-06-01 01:42:37] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249356975.jpg
+[2026-06-01 01:42:37] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249356975.jpg
+[2026-06-01 01:42:37] INFO  Thumbnail ready: room=2042918898441347240 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249356975.jpg
+[2026-06-01 01:42:37] INFO  Thumbnail loaded: 2042918898441347240 ((200, 112))
+[2026-06-01 01:42:37] INFO  Thumbnail applied to card: 2042918898441347240
+[2026-06-01 01:42:40] DEBUG mitmproxy: [01:42:40.046] [Stream] room=2078947712742195359 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:40] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:40] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:42:40] DEBUG mitmproxy: [01:42:40.442] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:40] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:40] INFO  File watcher: 4129 new bytes in capture file
+[2026-06-01 01:42:40] INFO  File watcher: parsed room=2078947712742195359 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894771
+[2026-06-01 01:42:40] INFO  New live room: 视频号_20789477 (room=2078947712742195359)
+[2026-06-01 01:42:40] INFO  Capturing thumbnail for room 2078947712742195359...
+[2026-06-01 01:42:40] INFO  File watcher: parsed room=2042918898441347240 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889
+[2026-06-01 01:42:40] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894771...
+[2026-06-01 01:42:41] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249360977.jpg
+[2026-06-01 01:42:41] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249360977.jpg
+[2026-06-01 01:42:41] INFO  Thumbnail ready: room=2078947712742195359 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249360977.jpg
+[2026-06-01 01:42:41] INFO  Thumbnail loaded: 2078947712742195359 ((200, 112))
+[2026-06-01 01:42:41] INFO  Thumbnail applied to card: 2078947712742195359
+[2026-06-01 01:42:41] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:42:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:44] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:42:45] DEBUG mitmproxy: [01:42:45.578] [Stream] room=2078947712742195359 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_jf521.flv?cdntagname=jf521&co
+[2026-06-01 01:42:45] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_jf521.flv?cdntagname=jf521&co
+[2026-06-01 01:42:45] INFO  File watcher: 2149 new bytes in capture file
+[2026-06-01 01:42:45] INFO  File watcher: parsed room=2078947712742195359 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894771
+[2026-06-01 01:42:49] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:42:49] DEBUG mitmproxy: [01:42:49.650] [Stream] room=2078947723246999262 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947723246999262_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:49] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947723246999262_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:42:49] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:42:49] INFO  File watcher: 2059 new bytes in capture file
+[2026-06-01 01:42:49] INFO  File watcher: parsed room=2078947723246999262 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894772
+[2026-06-01 01:42:49] INFO  New live room: 视频号_20789477 (room=2078947723246999262)
+[2026-06-01 01:42:49] INFO  Capturing thumbnail for room 2078947723246999262...
+[2026-06-01 01:42:49] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894772...
+[2026-06-01 01:42:50] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249369982.jpg
+[2026-06-01 01:42:50] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249369982.jpg
+[2026-06-01 01:42:50] INFO  Thumbnail ready: room=2078947723246999262 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249369982.jpg
+[2026-06-01 01:42:50] INFO  Thumbnail loaded: 2078947723246999262 ((200, 112))
+[2026-06-01 01:42:50] INFO  Thumbnail applied to card: 2078947723246999262
+[2026-06-01 01:42:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:42:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
