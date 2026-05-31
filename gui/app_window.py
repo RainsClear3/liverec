@@ -624,7 +624,8 @@ class MainWindow:
                 if not os.path.isfile(image_path):
                     logger.warning(f"Thumbnail file missing: {image_path}")
                     return
-                img = Image.open(image_path).resize((200, 112), Image.LANCZOS)
+                img = Image.open(image_path)
+                img.thumbnail((240, 180), Image.LANCZOS)
                 photo = ImageTk.PhotoImage(img)
                 self._thumb_images[room_id] = photo
                 logger.info(f"Thumbnail loaded: {room_id} ({img.size})")
