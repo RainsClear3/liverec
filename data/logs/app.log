@@ -11982,3 +11982,330 @@ Please navigate to a video channel live page.
 [2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
 [2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
 [2026-06-01 01:43:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:29] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:43:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:09] INFO  System proxy restored
+[2026-06-01 01:44:09] INFO  Sniffer stopped
+[2026-06-01 01:44:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:16] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:31] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:31] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:31] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:31] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:44:44] INFO  Shutting down...
+[2026-06-01 01:44:44] INFO  Monitor stopped
+[2026-06-01 01:44:44] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:44:44] DEBUG Config saved successfully
+[2026-06-01 01:44:44] INFO  Shutdown complete
+[2026-06-01 01:44:44] DEBUG Config saved successfully
+[2026-06-01 01:44:44] INFO  Shutdown complete
+[2026-06-01 01:44:44] INFO  Shutting down...
+[2026-06-01 01:44:44] INFO  Monitor stopped
+[2026-06-01 01:44:44] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:44:44] DEBUG Config saved successfully
+[2026-06-01 01:44:44] INFO  Shutdown complete
+[2026-06-01 01:44:44] DEBUG Config saved successfully
+[2026-06-01 01:44:44] INFO  Shutdown complete
+[2026-06-01 01:44:44] INFO  Application exited
+[2026-06-01 01:46:07] INFO  ============================================================
+[2026-06-01 01:46:07] INFO  直播录屏 v2.0 starting...
+[2026-06-01 01:46:07] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 01:46:07] INFO  Project root: D:\liverec
+[2026-06-01 01:46:07] INFO  ============================================================
+[2026-06-01 01:46:07] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 01:46:07] DEBUG Config saved successfully
+[2026-06-01 01:46:07] INFO  Monitor started (interval=15s)
+[2026-06-01 01:46:07] INFO  Application initialized successfully
+[2026-06-01 01:46:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:08] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:13] INFO  WeChat processes killed
+[2026-06-01 01:46:14] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 01:46:17] INFO  WeChat launched (PID=28340)
+[2026-06-01 01:46:17] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured, WeChat restarted.
+Please navigate to a video channel live page.
+[2026-06-01 01:46:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:23] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:30] DEBUG mitmproxy: [01:46:30.361] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:30] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:30] INFO  File watcher: 2055 new bytes in capture file
+[2026-06-01 01:46:30] INFO  File watcher: parsed room=2042918898441347240 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889
+[2026-06-01 01:46:30] INFO  New live room: 视频号_20429188 (room=2042918898441347240)
+[2026-06-01 01:46:30] INFO  Capturing thumbnail for room 2042918898441347240...
+[2026-06-01 01:46:30] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889...
+[2026-06-01 01:46:30] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249590494.jpg
+[2026-06-01 01:46:30] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249590494.jpg
+[2026-06-01 01:46:30] INFO  Thumbnail ready: room=2042918898441347240 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249590494.jpg
+[2026-06-01 01:46:30] INFO  Thumbnail loaded: 2042918898441347240 ((200, 112))
+[2026-06-01 01:46:30] INFO  Thumbnail applied to card: 2042918898441347240
+[2026-06-01 01:46:34] DEBUG mitmproxy: [01:46:34.581] [Stream] room=2078947723246999262 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947723246999262_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:34] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947723246999262_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:35] INFO  File watcher: 2056 new bytes in capture file
+[2026-06-01 01:46:35] INFO  File watcher: parsed room=2078947723246999262 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894772
+[2026-06-01 01:46:35] INFO  New live room: 视频号_20789477 (room=2078947723246999262)
+[2026-06-01 01:46:35] INFO  Capturing thumbnail for room 2078947723246999262...
+[2026-06-01 01:46:35] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894772...
+[2026-06-01 01:46:35] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249595496.jpg
+[2026-06-01 01:46:35] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249595496.jpg
+[2026-06-01 01:46:35] INFO  Thumbnail ready: room=2078947723246999262 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249595496.jpg
+[2026-06-01 01:46:35] INFO  Thumbnail loaded: 2078947723246999262 ((200, 112))
+[2026-06-01 01:46:35] INFO  Thumbnail applied to card: 2078947723246999262
+[2026-06-01 01:46:37] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:37] DEBUG mitmproxy: [01:46:37.445] [Stream] room=2042918921673498846 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:37] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:37] INFO  File watcher: 2062 new bytes in capture file
+[2026-06-01 01:46:37] INFO  File watcher: parsed room=2042918921673498846 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291892
+[2026-06-01 01:46:37] INFO  New live room: 视频号_20429189 (room=2042918921673498846)
+[2026-06-01 01:46:37] INFO  Capturing thumbnail for room 2042918921673498846...
+[2026-06-01 01:46:37] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291892...
+[2026-06-01 01:46:37] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249597498.jpg
+[2026-06-01 01:46:37] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249597498.jpg
+[2026-06-01 01:46:37] INFO  Thumbnail ready: room=2042918921673498846 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249597498.jpg
+[2026-06-01 01:46:37] INFO  Thumbnail loaded: 2042918921673498846 ((200, 112))
+[2026-06-01 01:46:37] INFO  Thumbnail applied to card: 2042918921673498846
+[2026-06-01 01:46:38] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:38] DEBUG mitmproxy: [01:46:38.788] [Stream] room=2042918918116762905 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918918116762905_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:38] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918918116762905_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:39] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:39] INFO  File watcher: 2081 new bytes in capture file
+[2026-06-01 01:46:39] INFO  File watcher: parsed room=2042918918116762905 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291891
+[2026-06-01 01:46:39] INFO  New live room: 视频号_20429189 (room=2042918918116762905)
+[2026-06-01 01:46:39] INFO  Capturing thumbnail for room 2042918918116762905...
+[2026-06-01 01:46:39] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291891...
+[2026-06-01 01:46:39] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249599500.jpg
+[2026-06-01 01:46:39] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249599500.jpg
+[2026-06-01 01:46:39] INFO  Thumbnail ready: room=2042918918116762905 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249599500.jpg
+[2026-06-01 01:46:39] INFO  Thumbnail loaded: 2042918918116762905 ((200, 112))
+[2026-06-01 01:46:39] INFO  Thumbnail applied to card: 2042918918116762905
+[2026-06-01 01:46:40] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:40] DEBUG mitmproxy: [01:46:40.824] [Stream] room=2042918926565160509 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918926565160509_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:40] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918926565160509_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:41] INFO  File watcher: 2056 new bytes in capture file
+[2026-06-01 01:46:41] INFO  File watcher: parsed room=2042918926565160509 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291892
+[2026-06-01 01:46:41] INFO  New live room: 视频号_20429189 (room=2042918926565160509)
+[2026-06-01 01:46:41] INFO  Capturing thumbnail for room 2042918926565160509...
+[2026-06-01 01:46:41] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291892...
+[2026-06-01 01:46:41] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249601502.jpg
+[2026-06-01 01:46:41] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249601502.jpg
+[2026-06-01 01:46:41] INFO  Thumbnail ready: room=2042918926565160509 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249601502.jpg
+[2026-06-01 01:46:41] INFO  Thumbnail loaded: 2042918926565160509 ((200, 112))
+[2026-06-01 01:46:41] INFO  Thumbnail applied to card: 2042918926565160509
+[2026-06-01 01:46:42] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:42] DEBUG mitmproxy: [01:46:42.429] [Stream] room=2078947722687636752 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947722687636752_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:42] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947722687636752_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:42] INFO  File watcher: 2049 new bytes in capture file
+[2026-06-01 01:46:42] INFO  File watcher: parsed room=2078947722687636752 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894772
+[2026-06-01 01:46:42] INFO  New live room: 视频号_20789477 (room=2078947722687636752)
+[2026-06-01 01:46:42] INFO  Capturing thumbnail for room 2078947722687636752...
+[2026-06-01 01:46:42] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894772...
+[2026-06-01 01:46:42] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249602503.jpg
+[2026-06-01 01:46:42] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249602503.jpg
+[2026-06-01 01:46:42] INFO  Thumbnail ready: room=2078947722687636752 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249602503.jpg
+[2026-06-01 01:46:42] INFO  Thumbnail loaded: 2078947722687636752 ((200, 112))
+[2026-06-01 01:46:42] INFO  Thumbnail applied to card: 2078947722687636752
+[2026-06-01 01:46:43] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:43] DEBUG mitmproxy: [01:46:43.568] [Stream] room=2042918932510417071 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918932510417071_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:43] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918932510417071_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:44] INFO  File watcher: 2039 new bytes in capture file
+[2026-06-01 01:46:44] INFO  File watcher: parsed room=2042918932510417071 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291893
+[2026-06-01 01:46:44] INFO  New live room: 视频号_20429189 (room=2042918932510417071)
+[2026-06-01 01:46:44] INFO  Capturing thumbnail for room 2042918932510417071...
+[2026-06-01 01:46:44] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291893...
+[2026-06-01 01:46:44] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249604505.jpg
+[2026-06-01 01:46:44] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249604505.jpg
+[2026-06-01 01:46:44] INFO  Thumbnail ready: room=2042918932510417071 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249604505.jpg
+[2026-06-01 01:46:44] INFO  Thumbnail loaded: 2042918932510417071 ((200, 112))
+[2026-06-01 01:46:44] INFO  Thumbnail applied to card: 2042918932510417071
+[2026-06-01 01:46:45] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:45] DEBUG mitmproxy: [01:46:45.449] [Stream] room=2078947712742195359 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:45] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&co
+[2026-06-01 01:46:45] INFO  File watcher: 2069 new bytes in capture file
+[2026-06-01 01:46:45] INFO  File watcher: parsed room=2078947712742195359 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894771
+[2026-06-01 01:46:45] INFO  New live room: 视频号_20789477 (room=2078947712742195359)
+[2026-06-01 01:46:45] INFO  Capturing thumbnail for room 2078947712742195359...
+[2026-06-01 01:46:45] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_207894771...
+[2026-06-01 01:46:46] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249605507.jpg
+[2026-06-01 01:46:46] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249605507.jpg
+[2026-06-01 01:46:46] INFO  Thumbnail ready: room=2078947712742195359 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780249605507.jpg
+[2026-06-01 01:46:46] INFO  Thumbnail loaded: 2078947712742195359 ((200, 112))
+[2026-06-01 01:46:46] INFO  Thumbnail applied to card: 2078947712742195359
+[2026-06-01 01:46:46] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:52] DEBUG mitmproxy: 127.0.0.1:63632: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:46:52] DEBUG mitmproxy: 127.0.0.1:63632: POST https://channels.weixin.qq.com/web/report-error?pf=web
+[2026-06-01 01:46:53] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 01:46:54] DEBUG Config saved successfully
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20429188
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20789477
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20429189
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20429189
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20429189
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20789477
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20429189
+[2026-06-01 01:46:54] INFO  Started recording: 视频号_20789477
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&combuf=bnfrw8J687aPckg3Vjj8dxihQCOCt3ghri4IKPRXDUpqu0TUjFPrXbszCuapuf8iY74mbcckf2RRE%2B2nhl8MiFBqxhSTtL94Tr3CEbCnedvvrAHl%2BH%2BsshCCKVYyPqYvD8Lh80Gi8%2BKiYy5N1HAUZUVksNZanAQuh%2BcnWxIo%2BwenoPAq7eUDDIcxF4U5dZgHzYOWIOBEvHjkEwK37fDVYP3EvW8LH7J6&expt=&extbuf=HpGUNQtUsXwbNvJQylskXXZOdTyvDq9x6LU6wyBs9tWkJ6AVeoYG4v7kf8EFB3uTferPS2RaupiaYwMjzi5S2x6uupCc2KHGLRjQboZcUCi2HogNnLl%2FexOk2ayG7wFYlcQqqnMsNYi6oAnKU8blTIM02tnMxbkfryOSnSpce1cvDs1u0VDPj4PcQSLB%2FfpK5ZXbXMcwJ%2FYEcfB4%2BAZM&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=1d5ea7c8b6915321cf69308c852a69b3&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=207cc337611544fd5aee8cc1a963bad0 -c copy -f mpegts F:\录播\视频号_20429188\视频号_20429188_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947723246999262_nh420.flv?cdntagname=nh420&combuf=VJvGyNKRChEB5CUTNNBuuub1wB6KbtURb23OJoRGaVnI8hkbVIDJT5pSpCu4ksm5G6jkRjorE8RyGmUbsSD3H12LpdHP3DwDvDeKupBXfHHwXjYqkOT%2FRqs7dKQeaXQHTiHNgU51lbdCmLzrn2Bu6ZAMyYnYslIzzobaomscQs7n8omMKLCdvTBV9tHQVionIrMgCBhnvyQZmSADFiz6oKB5P8uZZiw%3D&expt=&extbuf=XcSe2KctEOmLMByo62wV6qG8tu%2BaMNzEyqr4oMvEmx9IorXLe5u20S5teN2PqeERFiC7hTWq8%2FqSCRR%2B2osN%2F%2B9dWu15dmhu7OwKMxyIIG8C7PoulpmV99iS2uniDcwXNwsg75f2hZEeypoN4mmOzwc04MC17Vf9G3OvA%2FSV%2FvuoNojYZ5vmOH3Cmv5nF%2FxyblGxEyuKDKSxbqbRedX%2F&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=e98194c84d5e33a40e1fd77020935a88&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=3ac5fac6c52a8dae108094b8c97fb5a7 -c copy -f mpegts F:\录播\视频号_20789477\视频号_20789477_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918921673498846_nh420.flv?cdntagname=nh420&combuf=MmKVbRPv9%2F6j7wlBPt7jaF1Su%2FiVO4pHojD2mrb8UDmvQagGVEC4g%2FKkwRMFHEzfqQI8n%2Bcy5CimfKBaYPj2o7z7cq2uIas%2Fakax3lryRuA0ukt4pt4rOwG%2FP7SVIQOYDUuvdYMfCwS7yGpO0kLde%2FrfvScnkpBnAhvAWMaHX4PkigaUJH68wMQPMVp1KlGehKI3uF8Cw2J69q6oPNRYMvIhvGKURw%3D%3D&expt=&extbuf=TlUgTHtvu7IF%2FenjKpcOW4YvZbbehbYWFMeg7YRG2xSQ9ichjI9LXf0qqRZOSHM%2BVE9GYD41cQyMY7vKNDwFzjVK2AoDiXlUv%2FHxTBkzAEdUSxHyqlHxcrrm3APvNEhmVb65OEv%2BZeOjFCisTRJ2S%2Bna4PcKshQoVOADpg4xaUYnPYkpRWglHSVhqznpl1eU3szKlCwG1d4pZBp1fxXv&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=6d79a3d67e33fe7c4a5d39cde0958353&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=4c6346615850d41045f58dc38a3b1f24 -c copy -f mpegts F:\录播\视频号_20429189\视频号_20429189_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918918116762905_nh420.flv?cdntagname=nh420&combuf=RhEkvgtWLJT3fIBHFQAaSJB%2FlNlFXRA8u72obxM2QPMoK80HOuBwInHkBNTsa5IU9oydCDoJm1AzMU%2FjoTNrnVq0V9sX7Ii7ZxuMhlqONAlP0CMub5zvpyxwg%2FjAZa5dy4VZEilyXudgILHqUW36Q33JCx1xga2DmyXLRiSuB%2FknSN%2FYI%2BsJ6tV8qaq1jDmTlRQm1DYMPZGuJT4JuGnbQgkRuvFidR1ZDTmvQV60zQ%3D%3D&expt=&extbuf=aVL8x%2F8AbnfYvQd%2FCfFHjJ0J3y7k52mYIn0QB%2B6P7FJpE%2FXRdg4gqekIDtfh58uVp7AWMvcSVWqsPmBTg%2BPbQY5SpdoNylqdEHtM7jPz%2B8vFyPh3GI8rOqlX1leCgGn9xPXmXjE3vxqaz7Ehsuw%2FF5nQGfoLDyQLXNTJ1ywPKXX%2BZj7dHiQfxrchkoREp8Il0cCN3%2Fhrg2i7s9sSQ5Ut&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=2440ff73a4f59c2554de0310faacb4c8&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=90bd59119aab8c9514e8b018a4f2a35f -c copy -f mpegts F:\录播\视频号_20429189\视频号_20429189_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918926565160509_nh420.flv?cdntagname=nh420&combuf=N1Q%2BOHZPMYeVjr1baucY63Nqem78MCgteZKbDUlNJM2qTPGQA2ysN%2FC5MZMF4v24TFfeUmLXLkjNMOBIat38z108rMOna0VP%2Fg3LE2%2Fk8ofZYDr5tDf94Klme5s7l%2B4XRcys42fYm6o2yp7U8%2BXNvCvB%2FUNGgxC2r772XVdO4MOatHBv2K9%2F4vMXt%2FBWKcgJ%2F4W%2FPeRYM2LORrGUVEzWWSE%3D&expt=&extbuf=2dCx6g3ySetvfSbnqDDjCEqGTOpwp2GMk21DfAY9DzOtXnx6gKnnmfB7CqlO%2FooN7dyHscTJImShVPlGAkiOuObQg0aa4cr0DoZnOnt2Jw3fRyh4LdbWDsnyILS3EgV7tMFUjnzRDO5bjJiWOyzmuwJth7vFjQXWm7alpkAU5XUu3jgDz6b9u%2FcGDc9w2leOlk%2BpWQpSE4r%2BKlLL2tga&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=60320f16e5f11e8f1872d36e3c856275&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=baf11e0d26a96b5117cddc4331c20e91 -c copy -f mpegts F:\录播\视频号_20429189\视频号_20429189_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947722687636752_nh420.flv?cdntagname=nh420&combuf=1LbkvPvzZP3hwoMsc77VhJN87TITD%2FPKYoU5fh0MqMZ4jSiCrbADo8Vm5dArc6k1W5grb0%2BHRY5KVw3nL%2Fu%2FK0dZlVV56uIzrUTrpBMzKYp43LFx1gAd414sxGI%2Bs5c3PDUwuKhwuEkqd4esFbciplmbcqI6pomQoczfgs2v4VIi8q9XZbOC1Rli1NDsTkw%2B5tMxY48YG7iQOUts%2BcuIKl27&expt=&extbuf=etpaoHatTii6sx0FliMIup7g4P7qAdMnB2Ipu3EjUeBcnMrF8rGtWy8EAfypO8Ij%2Bt1L1d1BORHCvHpX%2FAYikCvZ5x8vw5OeVaSX1Y9wxor553u0RBO6xQcOqg8U1QmluSvpMBEIJM3wtnCleKG7NyXB%2Bjsg0tsxaqYY3%2BA5TQTQsFkTeyLjIwvB17ljRYKq3UdQ7KuiQAoGlzXGqJJz&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=10746e633448ed8958e9cfe73b6de062&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=65aa9b61d0310768971f1a2bab558953 -c copy -f mpegts F:\录播\视频号_20789477\视频号_20789477_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918932510417071_nh420.flv?cdntagname=nh420&combuf=LCAwqtRqZJ92QTOybCVIgoqI0pJl1Cb5XXHN8FmV6HcDo%2F7MDpK7kM1BxX%2FYMJqOOdXfxCF0vlGX8wZjeGnhQDkn4zGVvMNr%2B0lEGGE5%2BBBTkryoTgkVjVevO47bSTNAy44NvdsRkXMpL1qDeUBfX6eLqztAAUTiODHX%2Bq2Ao77McSbOSxihhzy76KbVXKbDmJwoDT%2F0RvQ%3D&expt=&extbuf=iDFuKkRGHaA9BnkRN0jZcBB7A3c8dZP3P9tJ5QuNN%2BHCfA21xXIbq21k4RqTgKys4mXBkxGYzvAeUg4USkOuehUop3RZ5JpX9o5k4FZCstYj%2Fjr3QpmsoqU38a8RqNmoN4Lsc9QCLgHySV2yBplfhKYaz4Wzv9xbPDgBUMPk%2F2UD1Lw8Xs00%2BppFNem%2FhOj4MwqAXzEosD3DZcBwC1sS&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=d6167ccb22c3bf229872b4afeb2ea628&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=97a87637b0a34f6a22c3e8ff33c87977 -c copy -f mpegts F:\录播\视频号_20429189\视频号_20429189_20260601_014654.ts
+[2026-06-01 01:46:54] DEBUG FFmpeg cmd: D:\liverec\ffmpeg\ffmpeg.exe -y -loglevel warning -hide_banner -rw_timeout 10000000 -user_agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 -referer https://channels.weixin.qq.com/web/pages/home?context_id=32-20-140-W350d3558ab4326ef223710fc6c588e2b1780249586817&entrance_id=1001&exportkey=n_ChQIAhIQO%2F324agrmAL8w5lpbwzi2hL0AQIE97dBBAEAAAAAANC0OC9Gj%2BUAAAAOpnltbLcz9gKNyK89dVj0tMrxTxQYWI0hNCQtxQdlaEDkjKntKzee5u2vTZmnQ%2B3ZVYPQ%2BkGVXQ3yiLNzlCQBwaxXDn1XD3AlLgg5%2FKAbGNVVO3ZSU7Jih1bp00FQ8YXkXxCilouRmv4RHVrLtdYuI5tUjQmuXdDutK58O9AtHKmHdNfrWOc3QwSP0sDrRyjZ7x28zjjYmg4oLFOZX3S0R0IsyQbOkExdyCqG0KvhYwEkXhSu2m0UfH2%2FWqgxwBip3DIvSvz%2BMoW9611IDHIrOPN36fwfd5kHBdwvvpw%3D&pass_ticket=Ts8Gb5ssSaA2HRPMIYF5awgFpGBKowmauGps2vSfRE2g2o0%2ByTfpJfIRshvxjJ96ilMuNyDzpnODrHXdJsu3Jg%3D%3D&wx_header=0 -headers accept: */*
+origin: https://channels.weixin.qq.com
+sec-fetch-site: cross-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+priority: u=1, i
+ -i https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2078947712742195359_nh420.flv?cdntagname=nh420&combuf=SIyNLMXENMySWM5WfHoTkOo5UDYX094ax%2FiWu3PdfHemNC%2BJZ0LYCJLGGretIJlzFXmIsvNFTqD1NK3enQ0I3I3QEBiN8qPnter1G6nbe6s6tEauwnC9FwRBBtwzaN%2FO96Y077QjoLAsUcvvbBr9zwTjdcbkJa1vBstBlx%2Ba2jsX%2BCrD25HlE6sUpvnGYcco3oayXzUwuz%2B4R86BOVA1jAX8egg3SsU7&expt=&extbuf=1LaKnn9YSZNj6QDij3mi1cvVgjiExP5jcjOjEj7cvNsXKU42DnI6Ioaqxe26e%2F6paoUfHjFNjWrDiFztrNeyjs%2BnI%2BYGhNcu9UUdTebB40bfm82UAqWWzk5%2FVUCDV%2F%2Ba2w2ing3zSiJvlGoUy27KNxEqdhijakLzCqOlYM%2FmSsixbBlZXkN8JE1%2F8lkiDF17q36jm2JUB%2BIwPsJbl%2B%2B2&gid=&openid=A679CCF713715CACC5A61AC1AD6A2190&q=3&sc=500&sv=2&txSecret=22f58e22381902261a23b9ddfb45d4d0&txTime=6A1DC574&vcodec=1&wu=1&wxext=0_3000_0&wxns=1&wxtoken=f402b3088e0ca48792057cd2381e8769 -c copy -f mpegts F:\录播\视频号_20789477\视频号_20789477_20260601_014654.ts
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20429188 (PID=15276, output=视频号_20429188_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20789477 (PID=37020, output=视频号_20789477_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20429189 (PID=11132, output=视频号_20429189_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20429189 (PID=40244, output=视频号_20429189_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20429189 (PID=16120, output=视频号_20429189_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20789477 (PID=45196, output=视频号_20789477_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20429189 (PID=19332, output=视频号_20429189_20260601_014654.ts)
+[2026-06-01 01:46:54] INFO  FFmpeg started for 视频号_20789477 (PID=32512, output=视频号_20789477_20260601_014654.ts)
+[2026-06-01 01:46:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:54] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:46:55] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:10] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:26] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:35] DEBUG mitmproxy: [01:47:35.857][127.0.0.1:58976] error establishing server connection: client disconnected
+[2026-06-01 01:47:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:41] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20429188, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20789477, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20429189, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20429189, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20429189, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20789477, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20429189, duration=0m57s, size=16MB
+[2026-06-01 01:47:51] INFO  Stopped recording: 视频号_20789477, duration=0m57s, size=16MB
+[2026-06-01 01:47:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:47:57] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:13] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:28] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:44] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:48:59] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:00] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:05] DEBUG mitmproxy: [01:49:05.935][127.0.0.1:54891] error establishing server connection: [Errno 11001] getaddrinfo failed
+[2026-06-01 01:49:05] DEBUG mitmproxy: << [Errno 11001] getaddrinfo failed
+[2026-06-01 01:49:15] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:15] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:15] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:15] DEBUG Douyin cookie init: status=200
+[2026-06-01 01:49:17] INFO  System proxy restored
+[2026-06-01 01:49:17] INFO  Sniffer stopped
+[2026-06-01 01:49:19] INFO  Shutting down...
+[2026-06-01 01:49:19] INFO  Monitor stopped
+[2026-06-01 01:49:19] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:49:19] DEBUG Config saved successfully
+[2026-06-01 01:49:19] INFO  Shutdown complete
+[2026-06-01 01:49:19] DEBUG Config saved successfully
+[2026-06-01 01:49:19] INFO  Shutdown complete
+[2026-06-01 01:49:19] INFO  Shutting down...
+[2026-06-01 01:49:19] INFO  Monitor stopped
+[2026-06-01 01:49:19] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 01:49:19] DEBUG Config saved successfully
+[2026-06-01 01:49:19] INFO  Shutdown complete
+[2026-06-01 01:49:19] DEBUG Config saved successfully
+[2026-06-01 01:49:19] INFO  Shutdown complete
+[2026-06-01 01:49:19] INFO  Application exited

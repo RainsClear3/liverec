@@ -90,7 +90,7 @@ class WeChatAddon:
         self._emit(url, headers, room_id)
 
     def _emit(self, url, headers, room_id):
-        info = {"room_id": room_id, "name": f"视频号_{room_id[:8]}"}
+        info = {"room_id": room_id, "name": f"视频号_{room_id}"}
         safe = Config.redact_url(url)
         logger.info(f"[Stream] room={room_id} {safe[:100]}")
         print(f"CAPTURED: {safe[:100]}", flush=True)

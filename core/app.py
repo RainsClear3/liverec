@@ -116,7 +116,7 @@ class App:
                     if existing:
                         existing.is_live = True
                     else:
-                        name = info.get("name", f"视频号_{room_id[:8]}")
+                        name = info.get("name", f"视频号_{room_id}")
                         s = StreamerModel(
                             platform="wechat", nickname=name,
                             userid=room_id, web_rid=room_id,

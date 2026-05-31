@@ -403,14 +403,22 @@ class MainWindow:
             return recorded
 
         future = asyncio.run_coroutine_threadsafe(_record_all(), self.loop)
-        try:
-            names = future.result(timeout=60)
-            if names:
-                self._log(f"已开始录制: {', '.join(names)}")
-            else:
-                self._log("没有可录制的直播")
-        except Exception as e:
-            self._log(f"录制失败: {e}")
+        self._log("正在批量录制...")
+
+        def _poll():
+            try:
+                if not future.done():
+                    self.root.after(500, _poll)
+                    return
+                names = future.result()
+                if names:
+                    self._log(f"已开始录制: {', '.join(names)}")
+                else:
+                    self._log("没有可录制的直播")
+            except Exception as e:
+                self._log(f"录制失败: {e}")
+
+        self.root.after(500, _poll)
 
     def _stop_all(self):
         """Stop all recordings."""
@@ -449,14 +457,22 @@ class MainWindow:
             return False
 
         future = asyncio.run_coroutine_threadsafe(_start(), self.loop)
-        try:
-            ok = future.result(timeout=10)
-            if ok:
-                self._log(f"⏺ 开始录制: {streamer.nickname}")
-            else:
-                messagebox.showerror("错误", f"获取 {streamer.nickname} 的直播流失败")
-        except Exception as e:
-            messagebox.showerror("错误", f"录制失败: {e}")
+        self._log(f"正在获取 {streamer.nickname} 的直播流...")
+
+        def _poll():
+            try:
+                if not future.done():
+                    self.root.after(300, _poll)
+                    return
+                ok = future.result()
+                if ok:
+                    self._log(f"⏺ 开始录制: {streamer.nickname}")
+                else:
+                    messagebox.showerror("错误", f"获取 {streamer.nickname} 的直播流失败")
+            except Exception as e:
+                messagebox.showerror("错误", f"录制失败: {e}")
+
+        self.root.after(300, _poll)
 
     def _on_tree_double_click(self, event):
         """Toggle streamer enable/disable on double-click."""
