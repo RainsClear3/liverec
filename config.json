@@ -1,0 +1,70 @@
+{
+    "config": {
+        "intervalTime": 15,
+        "definition": "标清",
+        "streamType": "flv",
+        "outFormat": "ts",
+        "checkPK": false,
+        "fileSize": 0,
+        "fileTime": 14040,
+        "recTime": 0,
+        "recFileSize": 0,
+        "save": "F:\\录播",
+        "mp3play": false,
+        "hideTime": false,
+        "hideFileSize": false,
+        "showUserCount": false,
+        "runServer": false,
+        "serverPort": 8088,
+        "pushMsg": true,
+        "pushConfig": {
+            "liveStatus": true,
+            "recStart": true,
+            "recEnd": true,
+            "webHookUrl": "",
+            "userid": "@all"
+        }
+    },
+    "user": [
+        {
+            "type": "douyin",
+            "nickname": "偶遇老胡",
+            "userid": "3734417791524299",
+            "sec_uid": "MS4wLjABAAAACAoNag4LKAx4Pp2rcy1GHzuN35AJHdhYLQfGdV4gTUQu5mDXmbLgYY-mRDjb_kdj",
+            "web_rid": "583030719535",
+            "unique_id": "Laohu6ge8",
+            "avatar": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_4f59f0e58a2559fd38fec17801e36415.jpeg?from=3067671334",
+            "disable": false
+        },
+        {
+            "type": "douyin",
+            "nickname": "子安环球故事",
+            "userid": "60353148000",
+            "sec_uid": "MS4wLjABAAAAhSfAWnHUXacDoNEnwRfgG2MwxOYiul4Uw3fAqU_jjWs",
+            "web_rid": "237257424826",
+            "unique_id": "A17517",
+            "avatar": "https://p11.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_3b11b752e66877b526167e202c8e6c02.jpeg?from=3067671334",
+            "disable": false
+        },
+        {
+            "type": "douyin",
+            "nickname": "陈长安",
+            "userid": "96380746147",
+            "sec_uid": "MS4wLjABAAAAumJ15S9a4iFrcRhIBgBjq49At2vMLoJoa8KTyiTfCXc",
+            "web_rid": "248478830412",
+            "unique_id": "ChenChangAn01",
+            "avatar": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_46253a4894ae63a96e35c18f831ef007.jpeg?from=3067671334",
+            "disable": false
+        },
+        {
+            "type": "douyin",
+            "nickname": "芝麻姐姐",
+            "userid": "1396839533776506",
+            "sec_uid": "MS4wLjABAAAAdjTMw8W53nlyA3s3wNEqpjq4v3lmjEZ3Vk5CAKytcsQpqtpFgaw6MRrlXR5jZMEl",
+            "web_rid": "40670676365",
+            "unique_id": "94562887813",
+            "avatar": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_2ff70c2d6fab09ada6ad35540615db33.jpeg?from=3067671334",
+            "disable": false
+        }
+    ]
+}

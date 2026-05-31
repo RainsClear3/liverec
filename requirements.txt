@@ -1,0 +1,7 @@
+aiohttp>=3.9.0
+aiohttp-retry>=2.8.0
+ttkbootstrap>=1.10.0
+pystray>=0.19.0
+Pillow>=10.0.0
+cryptography>=41.0.0
+mitmproxy>=10.0.0
