@@ -58,10 +58,9 @@ class StreamSniffer:
             os.makedirs(DATA_DIR, exist_ok=True)
             self._callbacks = [callback]
 
-            # Step 1: Kill existing WeChat and mitmdump, restore system proxy
-            self._kill_wechat()
+            # Step 1: Kill old mitmdump, restore proxy
             self._kill_mitmdump()
-            self._restore_system_proxy()  # Clean up leftover proxy from previous run
+            self._restore_system_proxy()
 
             # Step 2: Install mitmproxy CA cert
             self._install_mitm_ca()
@@ -69,7 +68,7 @@ class StreamSniffer:
             # Step 3: Write addon script
             self._write_addon()
 
-            # Step 4: Set PAC-based selective proxy (only WeChat domains)
+            # Step 4: Set system proxy
             self._set_system_proxy()
 
             # Step 5: Start mitmdump as regular HTTP proxy
@@ -107,8 +106,7 @@ class StreamSniffer:
                 self._restore_system_proxy()
                 return False
 
-            # Step 6: Launch WeChat with proxy + cert bypass + disable QUIC
-            self._launch_wechat()
+            # Step 6: WeChat should pick up the system proxy automatically
 
             self.is_running = True
             self._watcher_running = True
@@ -117,8 +115,7 @@ class StreamSniffer:
 
             logger.info(
                 f"Sniffer started - proxy on {PROXY_ADDR}\n"
-                "System proxy configured, WeChat restarted.\n"
-                "Please navigate to a video channel live page."
+                "System proxy configured. Enter a video channel live page."
             )
             return True
 

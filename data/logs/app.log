@@ -12758,3 +12758,138 @@ Please navigate to a video channel live page.
 [2026-06-01 01:56:56] DEBUG Config saved successfully
 [2026-06-01 01:56:56] INFO  Shutdown complete
 [2026-06-01 01:56:56] INFO  Application exited
+[2026-06-01 02:05:27] INFO  ============================================================
+[2026-06-01 02:05:27] INFO  直播录屏 v2.0 starting...
+[2026-06-01 02:05:27] INFO  Python 3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]
+[2026-06-01 02:05:27] INFO  Project root: D:\liverec
+[2026-06-01 02:05:27] INFO  ============================================================
+[2026-06-01 02:05:27] INFO  Loaded config: 4 streamers, interval=15s, quality=标清
+[2026-06-01 02:05:27] DEBUG Config saved successfully
+[2026-06-01 02:05:27] INFO  Monitor started (interval=15s)
+[2026-06-01 02:05:27] INFO  Application initialized successfully
+[2026-06-01 02:05:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:27] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:30] INFO  System proxy set to 127.0.0.1:8080
+[2026-06-01 02:05:33] INFO  Sniffer started - proxy on 127.0.0.1:8080
+System proxy configured. Enter a video channel live page.
+[2026-06-01 02:05:37] DEBUG mitmproxy: [02:05:37.350] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:05:37] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:05:37] INFO  File watcher: 2064 new bytes in capture file
+[2026-06-01 02:05:37] INFO  File watcher: parsed room=2042918898441347240 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889
+[2026-06-01 02:05:37] INFO  New live room: 视频号_2042918898441347240 (room=2042918898441347240)
+[2026-06-01 02:05:37] INFO  Capturing thumbnail for room 2042918898441347240...
+[2026-06-01 02:05:37] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889...
+[2026-06-01 02:05:37] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250737692.jpg
+[2026-06-01 02:05:37] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250737692.jpg
+[2026-06-01 02:05:37] INFO  Thumbnail ready: room=2042918898441347240 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250737692.jpg
+[2026-06-01 02:05:37] INFO  Thumbnail loaded: 2042918898441347240 ((101, 180))
+[2026-06-01 02:05:37] INFO  Thumbnail applied to card: 2042918898441347240
+[2026-06-01 02:05:39] DEBUG mitmproxy: [02:05:39.615] [Stream] room=2042918914103572089 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918914103572089_h264.flv?cdntagname=h264&comb
+[2026-06-01 02:05:39] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918914103572089_h264.flv?cdntagname=h264&comb
+[2026-06-01 02:05:39] INFO  File watcher: 2066 new bytes in capture file
+[2026-06-01 02:05:39] INFO  File watcher: parsed room=2042918914103572089 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291891
+[2026-06-01 02:05:39] INFO  New live room: 视频号_2042918914103572089 (room=2042918914103572089)
+[2026-06-01 02:05:39] INFO  Capturing thumbnail for room 2042918914103572089...
+[2026-06-01 02:05:39] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291891...
+[2026-06-01 02:05:40] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250739693.jpg
+[2026-06-01 02:05:40] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250739693.jpg
+[2026-06-01 02:05:40] INFO  Thumbnail ready: room=2042918914103572089 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250739693.jpg
+[2026-06-01 02:05:40] INFO  Thumbnail loaded: 2042918914103572089 ((101, 180))
+[2026-06-01 02:05:40] INFO  Thumbnail applied to card: 2042918914103572089
+[2026-06-01 02:05:40] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:40] DEBUG mitmproxy: [02:05:40.178] [Stream] room=2042918898441347240 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:05:40] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918898441347240_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:05:40] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:40] INFO  File watcher: 2061 new bytes in capture file
+[2026-06-01 02:05:40] INFO  File watcher: parsed room=2042918898441347240 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889
+[2026-06-01 02:05:42] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:42] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:42] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:43] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:43] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:46] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:47] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:51] DEBUG mitmproxy: [02:05:51.279] Unhandled error in task.
+[2026-06-01 02:05:51] DEBUG mitmproxy: ConnectionResetError: [WinError 10054] Զ������ǿ�ȹر���һ�����е����ӡ�
+[2026-06-01 02:05:57] DEBUG mitmproxy: [02:05:57.543] [Stream] room=2078947625430099456 https://pull-x1.wxlivecdn.com/trtc_1400419933/orig_2078947625430099456_xf521v.flv?cdntagname=xf521v&
+[2026-06-01 02:05:57] INFO  mitmproxy: CAPTURED: https://pull-x1.wxlivecdn.com/trtc_1400419933/orig_2078947625430099456_xf521v.flv?cdntagname=xf521v&
+[2026-06-01 02:05:57] INFO  File watcher: 2158 new bytes in capture file
+[2026-06-01 02:05:57] INFO  File watcher: parsed room=2078947625430099456 url=https://pull-x1.wxlivecdn.com/trtc_1400419933/orig_207894762
+[2026-06-01 02:05:57] INFO  New live room: 视频号_2078947625430099456 (room=2078947625430099456)
+[2026-06-01 02:05:57] INFO  Capturing thumbnail for room 2078947625430099456...
+[2026-06-01 02:05:57] DEBUG Capturing thumbnail: https://pull-x1.wxlivecdn.com/trtc_1400419933/orig_207894762...
+[2026-06-01 02:05:57] WARNING Thumbnail FFmpeg failed (rc=1): [flv @ 0000000002cdc5c0] Video codec (c) is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not bee
+[2026-06-01 02:05:57] WARNING Thumbnail capture failed for room 2078947625430099456
+[2026-06-01 02:05:58] DEBUG mitmproxy: [02:05:58.510] [Stream] room=2042918890136016463 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918890136016463_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:05:58] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918890136016463_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:05:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:58] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:05:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:58] INFO  File watcher: 2102 new bytes in capture file
+[2026-06-01 02:05:58] INFO  File watcher: parsed room=2042918890136016463 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889
+[2026-06-01 02:05:58] INFO  New live room: 视频号_2042918890136016463 (room=2042918890136016463)
+[2026-06-01 02:05:58] INFO  Capturing thumbnail for room 2042918890136016463...
+[2026-06-01 02:05:58] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291889...
+[2026-06-01 02:05:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:58] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:05:58] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250758703.jpg
+[2026-06-01 02:05:58] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250758703.jpg
+[2026-06-01 02:05:58] INFO  Thumbnail ready: room=2042918890136016463 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250758703.jpg
+[2026-06-01 02:05:58] INFO  Thumbnail loaded: 2042918890136016463 ((101, 180))
+[2026-06-01 02:05:58] INFO  Thumbnail applied to card: 2042918890136016463
+[2026-06-01 02:06:03] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:06:06] DEBUG mitmproxy: [02:06:06.410] [Stream] room=2042918879720285518 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918879720285518_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:06:06] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918879720285518_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:06:06] INFO  File watcher: 2094 new bytes in capture file
+[2026-06-01 02:06:06] INFO  File watcher: parsed room=2042918879720285518 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291887
+[2026-06-01 02:06:06] INFO  New live room: 视频号_2042918879720285518 (room=2042918879720285518)
+[2026-06-01 02:06:06] INFO  Capturing thumbnail for room 2042918879720285518...
+[2026-06-01 02:06:06] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291887...
+[2026-06-01 02:06:06] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250766707.jpg
+[2026-06-01 02:06:06] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250766707.jpg
+[2026-06-01 02:06:06] INFO  Thumbnail ready: room=2042918879720285518 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250766707.jpg
+[2026-06-01 02:06:06] INFO  Thumbnail loaded: 2042918879720285518 ((101, 180))
+[2026-06-01 02:06:06] INFO  Thumbnail applied to card: 2042918879720285518
+[2026-06-01 02:06:07] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:06:07] DEBUG mitmproxy: [02:06:07.373] [Stream] room=2042918865287345788 https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918865287345788_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:06:07] INFO  mitmproxy: CAPTURED: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_2042918865287345788_nh420.flv?cdntagname=nh420&co
+[2026-06-01 02:06:07] INFO  File watcher: 2016 new bytes in capture file
+[2026-06-01 02:06:07] INFO  File watcher: parsed room=2042918865287345788 url=https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291886
+[2026-06-01 02:06:07] INFO  New live room: 视频号_2042918865287345788 (room=2042918865287345788)
+[2026-06-01 02:06:07] INFO  Capturing thumbnail for room 2042918865287345788...
+[2026-06-01 02:06:07] DEBUG Capturing thumbnail: https://pull-m1.wxlivecdn.com/trtc_1400419933/orig_204291886...
+[2026-06-01 02:06:07] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250767709.jpg
+[2026-06-01 02:06:07] INFO  Thumbnail captured: C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250767709.jpg
+[2026-06-01 02:06:07] INFO  Thumbnail ready: room=2042918865287345788 path=C:\Users\Administrator\AppData\Local\Temp\wc_thumb_1780250767709.jpg
+[2026-06-01 02:06:07] INFO  Thumbnail loaded: 2042918865287345788 ((86, 180))
+[2026-06-01 02:06:07] INFO  Thumbnail applied to card: 2042918865287345788
+[2026-06-01 02:06:08] DEBUG mitmproxy: << stream reset by client (CANCEL)
+[2026-06-01 02:06:14] INFO  System proxy restored
+[2026-06-01 02:06:14] INFO  Sniffer stopped
+[2026-06-01 02:06:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:14] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:30] DEBUG Douyin cookie init: status=200
+[2026-06-01 02:06:43] INFO  Shutting down...
+[2026-06-01 02:06:43] INFO  Monitor stopped
+[2026-06-01 02:06:43] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 02:06:43] DEBUG Config saved successfully
+[2026-06-01 02:06:43] INFO  Shutdown complete
+[2026-06-01 02:06:43] DEBUG Config saved successfully
+[2026-06-01 02:06:43] INFO  Shutdown complete
+[2026-06-01 02:06:43] INFO  Shutting down...
+[2026-06-01 02:06:43] INFO  Monitor stopped
+[2026-06-01 02:06:43] INFO  Cleaned up WeChat entries, 4 streamers remaining
+[2026-06-01 02:06:43] DEBUG Config saved successfully
+[2026-06-01 02:06:43] INFO  Shutdown complete
+[2026-06-01 02:06:43] DEBUG Config saved successfully
+[2026-06-01 02:06:43] INFO  Shutdown complete
+[2026-06-01 02:06:43] INFO  Application exited
