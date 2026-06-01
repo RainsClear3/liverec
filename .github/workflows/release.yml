@@ -137,6 +137,9 @@ jobs:
             --hidden-import cryptography \
             main.py
 
+      - name: Ad-hoc sign (reduces Gatekeeper warnings)
+        run: codesign --deep --force --sign - dist/live-recorder-macos
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
