@@ -1,4 +1,4 @@
-"""Add streamer dialog — paste URL to auto-detect platform, or browse for WeChat."""
+"""Add streamer dialog — modern dark theme version."""
 
 import asyncio
 import logging
@@ -7,6 +7,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from typing import Optional
 
+from gui.theme import setup_theme, COLORS, HAS_BOOTSTRAP
 from core.models import Streamer
 from platforms.factory import PlatformFactory
 
@@ -22,49 +23,75 @@ class AddStreamerDialog:
 
         self.top = tk.Toplevel(parent)
         self.top.title("添加主播")
-        self.top.geometry("480x450")
+        self.top.geometry("520x500")
         self.top.resizable(False, False)
+        self.top.configure(bg=COLORS["bg_dark"])
         self.top.transient(parent)
         self.top.grab_set()
 
+        setup_theme(self.top)
         self._setup_ui()
 
     def _setup_ui(self):
+        bg = COLORS["bg_dark"]
+
+        # Title
+        title_label = tk.Label(self.top, text="添加主播", bg=bg,
+                              fg=COLORS["text_primary"], font=("Segoe UI", 14, "bold"))
+        title_label.pack(padx=15, pady=(15, 5), anchor=tk.W)
+
         # Platform selection
-        plat_frame = ttk.LabelFrame(self.top, text="平台")
-        plat_frame.pack(fill=tk.X, padx=10, pady=(10, 5))
+        plat_frame = tk.LabelFrame(self.top, text="选择平台", bg=bg,
+                                  fg=COLORS["text_secondary"],
+                                  font=("Segoe UI", 10), bd=1, relief="solid",
+                                  highlightbackground=COLORS["border"])
+        plat_frame.pack(fill=tk.X, padx=15, pady=(8, 4))
 
         self.platform_var = tk.StringVar(value="bilibili")
         platforms = PlatformFactory.list_platforms()
         for ptype, display in platforms:
-            ttk.Radiobutton(
+            rb = ttk.Radiobutton(
                 plat_frame, text=display, variable=self.platform_var, value=ptype,
                 command=self._on_platform_change,
-            ).pack(side=tk.LEFT, padx=10, pady=5)
+            )
+            rb.pack(side=tk.LEFT, padx=15, pady=10)
 
         # --- URL input frame (for Douyin / Bilibili) ---
-        self.url_frame = ttk.LabelFrame(self.top, text="直播间 URL（粘贴链接自动识别）")
-        self.url_frame.pack(fill=tk.X, padx=10, pady=5)
+        self.url_frame = tk.LabelFrame(self.top, text="直播间 URL（粘贴链接自动识别）",
+                                      bg=bg, fg=COLORS["text_secondary"],
+                                      font=("Segoe UI", 10), bd=1, relief="solid",
+                                      highlightbackground=COLORS["border"])
 
         self.url_var = tk.StringVar()
-        ttk.Entry(self.url_frame, textvariable=self.url_var, width=50).pack(
-            fill=tk.X, padx=5, pady=5
-        )
+        url_entry = ttk.Entry(self.url_frame, textvariable=self.url_var, width=50)
+        url_entry.pack(fill=tk.X, padx=8, pady=8)
 
-        btn_frame_url = ttk.Frame(self.url_frame)
-        btn_frame_url.pack(fill=tk.X, padx=5, pady=(0, 5))
-        ttk.Button(btn_frame_url, text="粘贴", command=self._paste_url).pack(
-            side=tk.LEFT, padx=2
-        )
-        ttk.Button(btn_frame_url, text="自动识别", command=self._auto_detect).pack(
-            side=tk.LEFT, padx=2
-        )
+        btn_frame_url = tk.Frame(self.url_frame, bg=bg)
+        btn_frame_url.pack(fill=tk.X, padx=8, pady=(0, 8))
+
+        btn_style = {
+            "bg": COLORS["primary"],
+            "fg": "#ffffff",
+            "font": ("Segoe UI", 10),
+            "relief": "flat",
+            "bd": 0,
+            "cursor": "hand2",
+            "padx": 12,
+            "pady": 4,
+        }
+
+        tk.Button(btn_frame_url, text="粘贴", command=self._paste_url, **btn_style
+                 ).pack(side=tk.LEFT, padx=4)
+        tk.Button(btn_frame_url, text="自动识别", command=self._auto_detect, **btn_style
+                 ).pack(side=tk.LEFT, padx=4)
 
         # --- WeChat frame (for video号) ---
-        self.wechat_frame = ttk.LabelFrame(self.top, text="视频号 — 手动捕获流地址")
-        # Don't pack yet — shown when WeChat is selected
+        self.wechat_frame = tk.LabelFrame(self.top, text="视频号 — 手动捕获流地址",
+                                         bg=bg, fg=COLORS["text_secondary"],
+                                         font=("Segoe UI", 10), bd=1, relief="solid",
+                                         highlightbackground=COLORS["border"])
 
-        ttk.Label(
+        tk.Label(
             self.wechat_frame,
             text="步骤：\n"
                  "1. 打开微信 → 视频号 → 直播，进入直播间\n"
@@ -72,22 +99,28 @@ class AddStreamerDialog:
                  "3. 找到 .m3u8 或 .flv 开头的流地址\n"
                  "4. 复制该地址，粘贴到下方输入框\n"
                  "5. 点击「添加流地址」",
-            justify=tk.LEFT,
-        ).pack(padx=10, pady=5)
+            justify=tk.LEFT, bg=bg, fg=COLORS["text_primary"],
+            font=("Segoe UI", 10), anchor=tk.W,
+        ).pack(padx=12, pady=8, anchor=tk.W)
 
-        url_row = ttk.Frame(self.wechat_frame)
-        url_row.pack(fill=tk.X, padx=10, pady=(0, 5))
+        url_row = tk.Frame(self.wechat_frame, bg=bg)
+        url_row.pack(fill=tk.X, padx=12, pady=(0, 10))
         self._wechat_url_var = tk.StringVar()
         ttk.Entry(url_row, textvariable=self._wechat_url_var, width=40).pack(
-            side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 5)
+            side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 8)
         )
-        ttk.Button(
-            url_row, text="添加流地址", command=self._add_wechat_url
-        ).pack(side=tk.LEFT)
+        tk.Button(url_row, text="添加流地址", command=self._add_wechat_url, **btn_style
+                 ).pack(side=tk.LEFT)
 
         # --- Manual input fields ---
-        manual_frame = ttk.LabelFrame(self.top, text="主播信息")
-        manual_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
+        manual_frame = tk.LabelFrame(self.top, text="主播信息", bg=bg,
+                                    fg=COLORS["text_secondary"],
+                                    font=("Segoe UI", 10), bd=1, relief="solid",
+                                    highlightbackground=COLORS["border"])
+        # Initialize platform-specific frame visibility FIRST
+        self._on_platform_change()
+
+        manual_frame.pack(fill=tk.BOTH, expand=True, padx=15, pady=4)
 
         fields = [
             ("昵称:", "nickname"),
@@ -97,38 +130,45 @@ class AddStreamerDialog:
         ]
         self.entries = {}
         for i, (label, key) in enumerate(fields):
-            ttk.Label(manual_frame, text=label).grid(
-                row=i, column=0, sticky=tk.W, padx=5, pady=3
+            tk.Label(manual_frame, text=label, bg=bg, fg=COLORS["text_primary"],
+                    font=("Segoe UI", 10), anchor=tk.W).grid(
+                row=i, column=0, sticky=tk.W, padx=10, pady=5
             )
             var = tk.StringVar()
-            ttk.Entry(manual_frame, textvariable=var, width=35).grid(
-                row=i, column=1, sticky=tk.EW, padx=5, pady=3
-            )
+            entry = ttk.Entry(manual_frame, textvariable=var, width=35)
+            entry.grid(row=i, column=1, sticky=tk.EW, padx=10, pady=5)
             self.entries[key] = var
         manual_frame.columnconfigure(1, weight=1)
 
         # --- Bottom buttons ---
-        btn_bottom = ttk.Frame(self.top)
-        btn_bottom.pack(fill=tk.X, padx=10, pady=(5, 10))
-        ttk.Button(btn_bottom, text="确定", command=self._on_ok).pack(
-            side=tk.RIGHT, padx=5
-        )
-        ttk.Button(btn_bottom, text="取消", command=self._on_cancel).pack(
-            side=tk.RIGHT, padx=5
-        )
+        btn_bottom = tk.Frame(self.top, bg=bg)
+        btn_bottom.pack(fill=tk.X, padx=15, pady=(8, 15))
 
-        # Initialize visibility
-        self._on_platform_change()
+        cancel_btn = tk.Button(
+            btn_bottom, text="取消", command=self._on_cancel,
+            bg=COLORS["bg_surface"], fg=COLORS["text_primary"],
+            font=("Segoe UI", 10), relief="flat", bd=0, cursor="hand2",
+            padx=16, pady=6,
+        )
+        cancel_btn.pack(side=tk.RIGHT, padx=(6, 0))
+
+        ok_btn = tk.Button(
+            btn_bottom, text="确定", command=self._on_ok,
+            bg=COLORS["primary"], fg="#ffffff",
+            font=("Segoe UI", 10, "bold"), relief="flat", bd=0, cursor="hand2",
+            padx=16, pady=6,
+        )
+        ok_btn.pack(side=tk.RIGHT, padx=(6, 0))
 
     def _on_platform_change(self):
         """Show/hide frames based on selected platform."""
         platform = self.platform_var.get()
         if platform == "wechat":
             self.url_frame.pack_forget()
-            self.wechat_frame.pack(fill=tk.X, padx=10, pady=5)
+            self.wechat_frame.pack(fill=tk.X, padx=15, pady=4)
         else:
             self.wechat_frame.pack_forget()
-            self.url_frame.pack(fill=tk.X, padx=10, pady=5)
+            self.url_frame.pack(fill=tk.X, padx=15, pady=4)
 
     def _paste_url(self):
         try:
