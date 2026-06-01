@@ -17,12 +17,12 @@
 
 | 平台 | 架构 | 文件 |
 |------|------|------|
-| Windows | x64 | `live-recorder-windows-x64.exe` |
-| Windows | ARM64 | `live-recorder-windows-arm64.exe` |
+| Windows | x64 (64位) | `live-recorder-windows-x64.exe` |
+| Windows | x86 (32位) | `live-recorder-windows-x86.exe` |
 | Linux | x64 | `live-recorder-linux-x64` |
-| Linux | ARM64 | `live-recorder-linux-arm64` |
-| macOS | Intel (x64) | `live-recorder-macos-x64` |
-| macOS | Apple Silicon (ARM64) | `live-recorder-macos-arm64` |
+| Linux | ARM64 | `live-recorder-linux-arm64`（树莓派 4/5）|
+| macOS | Intel | `live-recorder-macos-x64` |
+| macOS | Apple Silicon (M1/M2/M3) | `live-recorder-macos-arm64` |
 
 ## 安装使用
 
