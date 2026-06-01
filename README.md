@@ -15,11 +15,14 @@
 
 前往 [Releases](https://github.com/RainsClear3/liverec/releases) 页面下载对应平台的可执行文件：
 
-| 平台 | 文件 |
-|------|------|
-| Windows | `live-recorder-windows.exe` |
-| Linux | `live-recorder-linux` |
-| macOS | `live-recorder-macos` |
+| 平台 | 架构 | 文件 |
+|------|------|------|
+| Windows | x64 | `live-recorder-windows-x64.exe` |
+| Windows | ARM64 | `live-recorder-windows-arm64.exe` |
+| Linux | x64 | `live-recorder-linux-x64` |
+| Linux | ARM64 | `live-recorder-linux-arm64` |
+| macOS | Intel (x64) | `live-recorder-macos-x64` |
+| macOS | Apple Silicon (ARM64) | `live-recorder-macos-arm64` |
 
 ## 安装使用
 
@@ -36,14 +39,14 @@ chmod +x live-recorder-linux
 首次运行会提示"无法验证开发者"，请按以下步骤操作：
 
 **方法一（推荐）：右键打开**
-1. 右键点击 `live-recorder-macos`
+1. 右键点击下载的文件（如 `live-recorder-macos-arm64`）
 2. 选择"打开"
 3. 弹窗中再次点击"打开"
 
 **方法二：终端移除隔离标记**
 ```bash
-xattr -d com.apple.quarantine live-recorder-macos
-./live-recorder-macos
+xattr -d com.apple.quarantine live-recorder-macos-arm64
+./live-recorder-macos-arm64
 ```
 
 ## 从源码运行

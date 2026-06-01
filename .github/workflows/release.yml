@@ -14,8 +14,48 @@ permissions:
   contents: write
 
 jobs:
-  build-windows:
-    runs-on: windows-latest
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # ── Windows ──
+          - os: windows-latest
+            platform: windows
+            arch: x64
+            artifact: live-recorder-windows-x64.exe
+            shell: cmd
+          - os: windows-arm64
+            platform: windows
+            arch: arm64
+            artifact: live-recorder-windows-arm64.exe
+            shell: cmd
+          # ── Linux ──
+          - os: ubuntu-latest
+            platform: linux
+            arch: x64
+            artifact: live-recorder-linux-x64
+            shell: bash
+          - os: ubuntu-24.04-arm
+            platform: linux
+            arch: arm64
+            artifact: live-recorder-linux-arm64
+            shell: bash
+          # ── macOS ──
+          - os: macos-13
+            platform: macos
+            arch: x64
+            artifact: live-recorder-macos-x64
+            shell: bash
+          - os: macos-latest
+            platform: macos
+            arch: arm64
+            artifact: live-recorder-macos-arm64
+            shell: bash
+
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.platform }} (${{ matrix.arch }})
+
     steps:
       - uses: actions/checkout@v4
 
@@ -24,16 +64,26 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
+      # ── Linux: system deps ──
+      - name: Install system dependencies (Linux)
+        if: matrix.platform == 'linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-tk ffmpeg
+
+      # ── Dependencies ──
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyinstaller
 
-      - name: Build executable
+      # ── Windows build ──
+      - name: Build (Windows)
+        if: matrix.platform == 'windows'
         run: |
           pyinstaller --noconfirm --onefile --windowed ^
-            --name "live-recorder-windows" ^
+            --name "${{ matrix.artifact }}" ^
             --add-data "gui;gui" ^
             --add-data "core;core" ^
             --add-data "platforms;platforms" ^
@@ -50,37 +100,12 @@ jobs:
             main.py
         shell: cmd
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: windows-build
-          path: dist/live-recorder-windows.exe
-
-  build-linux:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-tk ffmpeg
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pyinstaller
-
-      - name: Build executable
+      # ── Linux / macOS build ──
+      - name: Build (Linux/macOS)
+        if: matrix.platform != 'windows'
         run: |
           pyinstaller --noconfirm --onefile --windowed \
-            --name "live-recorder-linux" \
+            --name "${{ matrix.artifact }}" \
             --add-data "gui:gui" \
             --add-data "core:core" \
             --add-data "platforms:platforms" \
@@ -95,59 +120,22 @@ jobs:
             --hidden-import aiohttp \
             --hidden-import cryptography \
             main.py
+        shell: bash
 
+      # ── macOS ad-hoc sign ──
+      - name: Ad-hoc sign (macOS)
+        if: matrix.platform == 'macos'
+        run: codesign --deep --force --sign - "dist/${{ matrix.artifact }}"
+
+      # ── Upload ──
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: linux-build
-          path: dist/live-recorder-linux
-
-  build-macos:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pyinstaller
-
-      - name: Build executable
-        run: |
-          pyinstaller --noconfirm --onefile --windowed \
-            --name "live-recorder-macos" \
-            --add-data "gui:gui" \
-            --add-data "core:core" \
-            --add-data "platforms:platforms" \
-            --add-data "recorder:recorder" \
-            --add-data "notify:notify" \
-            --add-data "utils:utils" \
-            --add-data "wechat:wechat" \
-            --add-data "config.json:." \
-            --hidden-import ttkbootstrap \
-            --hidden-import pystray \
-            --hidden-import PIL \
-            --hidden-import aiohttp \
-            --hidden-import cryptography \
-            main.py
-
-      - name: Ad-hoc sign (reduces Gatekeeper warnings)
-        run: codesign --deep --force --sign - dist/live-recorder-macos
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: macos-build
-          path: dist/live-recorder-macos
+          name: build-${{ matrix.platform }}-${{ matrix.arch }}
+          path: dist/${{ matrix.artifact }}
 
   release:
-    needs: [build-windows, build-linux, build-macos]
+    needs: build
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/')
     steps:
@@ -156,16 +144,13 @@ jobs:
         with:
           path: artifacts
 
-      - name: List artifacts
+      - name: List all artifacts
         run: find artifacts -type f
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            artifacts/windows-build/*
-            artifacts/linux-build/*
-            artifacts/macos-build/*
+          files: artifacts/**/*
           generate_release_notes: true
           draft: false
           prerelease: false
