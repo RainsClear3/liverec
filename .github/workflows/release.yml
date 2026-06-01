@@ -5,10 +5,6 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Release tag (e.g. v2.1.0)'
-        required: true
 
 permissions:
   contents: write
@@ -19,35 +15,45 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # ── Windows ──
+          # ── Windows x64 ──
           - os: windows-latest
             platform: windows
             arch: x64
             artifact: live-recorder-windows-x64.exe
             shell: cmd
-          - os: windows-arm64
+
+          # ── Windows x86 (32-bit) ──
+          - os: windows-latest
             platform: windows
-            arch: arm64
-            artifact: live-recorder-windows-arm64.exe
+            arch: x86
+            artifact: live-recorder-windows-x86.exe
             shell: cmd
-          # ── Linux ──
+            win32: true
+
+          # ── Linux x64 ──
           - os: ubuntu-latest
             platform: linux
             arch: x64
             artifact: live-recorder-linux-x64
             shell: bash
-          - os: ubuntu-24.04-arm
+
+          # ── Linux arm64 (树莓派 4/5) ──
+          - os: ubuntu-latest
             platform: linux
             arch: arm64
             artifact: live-recorder-linux-arm64
             shell: bash
-          # ── macOS ──
+            use_qemu: true
+
+          # ── macOS Intel ──
           - os: macos-13
             platform: macos
             arch: x64
             artifact: live-recorder-macos-x64
             shell: bash
-          - os: macos-latest
+
+          # ── macOS Apple Silicon ──
+          - os: macos-14
             platform: macos
             arch: arm64
             artifact: live-recorder-macos-arm64
@@ -59,28 +65,86 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      # ── Linux arm64: set up QEMU ──
+      - name: Set up QEMU (Linux arm64)
+        if: matrix.use_qemu
+        uses: uraimo/run-on-arch-action@v2
+        with:
+          arch: aarch64
+          distro: ubuntu22.04
+          githubToken: ${{ github.token }}
+          run: |
+            # This step runs inside the emulated arm64 container
+            # We'll do the full build here
+            echo "Building inside arm64 container..."
+            apt-get update && apt-get install -y python3-pip python3-tk ffmpeg
+            pip3 install -r requirements.txt
+            pip3 install pyinstaller
+            pyinstaller --noconfirm --onefile --windowed \
+              --name "${{ matrix.artifact }}" \
+              --add-data "gui:gui" \
+              --add-data "core:core" \
+              --add-data "platforms:platforms" \
+              --add-data "recorder:recorder" \
+              --add-data "notify:notify" \
+              --add-data "utils:utils" \
+              --add-data "wechat:wechat" \
+              --add-data "config.json:." \
+              --hidden-import ttkbootstrap \
+              --hidden-import pystray \
+              --hidden-import PIL \
+              --hidden-import aiohttp \
+              --hidden-import cryptography \
+              main.py
+
+      - name: Upload artifact (Linux arm64)
+        if: matrix.use_qemu
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ matrix.platform }}-${{ matrix.arch }}
+          path: dist/${{ matrix.artifact }}
+
+      # ── Standard builds (non-QEMU) ──
+      - name: Set up Python (64-bit)
+        if: ${{ !matrix.use_qemu && !matrix.win32 }}
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # ── Linux: system deps ──
+      - name: Set up Python 3.12 (32-bit)
+        if: ${{ matrix.win32 }}
+        run: |
+          # Download and install 32-bit Python
+          curl -o py32.exe https://www.python.org/ftp/python/3.12.4/python-3.12.4.exe
+          py32.exe /quiet InstallAllUsers=1 TargetDir=C:\Python32 PrependPath=0 Include_launcher=0 Include_test=0
+          echo "C:\Python32" >> $env:GITHUB_PATH
+          echo "C:\Python32\Scripts" >> $env:GITHUB_PATH
+          # Verify
+          C:\Python32\python.exe --version
+
       - name: Install system dependencies (Linux)
-        if: matrix.platform == 'linux'
+        if: ${{ !matrix.use_qemu && matrix.platform == 'linux' }}
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-tk ffmpeg
 
-      # ── Dependencies ──
       - name: Install Python dependencies
+        if: ${{ !matrix.use_qemu && !matrix.win32 }}
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyinstaller
 
-      # ── Windows build ──
-      - name: Build (Windows)
-        if: matrix.platform == 'windows'
+      - name: Install Python dependencies (32-bit)
+        if: ${{ matrix.win32 }}
+        shell: cmd
+        run: |
+          C:\Python32\python.exe -m pip install --upgrade pip
+          C:\Python32\Scripts\pip.exe install -r requirements.txt
+          C:\Python32\Scripts\pip.exe install pyinstaller
+
+      - name: Build (Windows 64-bit)
+        if: ${{ !matrix.use_qemu && matrix.platform == 'windows' && !matrix.win32 }}
         run: |
           pyinstaller --noconfirm --onefile --windowed ^
             --name "${{ matrix.artifact }}" ^
@@ -100,9 +164,29 @@ jobs:
             main.py
         shell: cmd
 
-      # ── Linux / macOS build ──
+      - name: Build (Windows 32-bit)
+        if: ${{ matrix.win32 }}
+        run: |
+          C:\Python32\Scripts\pyinstaller.exe --noconfirm --onefile --windowed ^
+            --name "${{ matrix.artifact }}" ^
+            --add-data "gui;gui" ^
+            --add-data "core;core" ^
+            --add-data "platforms;platforms" ^
+            --add-data "recorder;recorder" ^
+            --add-data "notify;notify" ^
+            --add-data "utils;utils" ^
+            --add-data "wechat;wechat" ^
+            --add-data "config.json;." ^
+            --hidden-import ttkbootstrap ^
+            --hidden-import pystray ^
+            --hidden-import PIL ^
+            --hidden-import aiohttp ^
+            --hidden-import cryptography ^
+            main.py
+        shell: cmd
+
       - name: Build (Linux/macOS)
-        if: matrix.platform != 'windows'
+        if: ${{ !matrix.use_qemu && matrix.platform != 'windows' }}
         run: |
           pyinstaller --noconfirm --onefile --windowed \
             --name "${{ matrix.artifact }}" \
@@ -122,13 +206,12 @@ jobs:
             main.py
         shell: bash
 
-      # ── macOS ad-hoc sign ──
       - name: Ad-hoc sign (macOS)
-        if: matrix.platform == 'macos'
+        if: ${{ !matrix.use_qemu && matrix.platform == 'macos' }}
         run: codesign --deep --force --sign - "dist/${{ matrix.artifact }}"
 
-      # ── Upload ──
       - name: Upload artifact
+        if: ${{ !matrix.use_qemu }}
         uses: actions/upload-artifact@v4
         with:
           name: build-${{ matrix.platform }}-${{ matrix.arch }}
@@ -144,8 +227,8 @@ jobs:
         with:
           path: artifacts
 
-      - name: List all artifacts
-        run: find artifacts -type f
+      - name: List artifacts
+        run: find artifacts -type f | sort
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
