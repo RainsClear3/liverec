@@ -33,7 +33,7 @@ jobs:
       - name: Build executable
         run: |
           pyinstaller --noconfirm --onefile --windowed ^
-            --name "直播录屏" ^
+            --name "live-recorder-windows" ^
             --add-data "gui;gui" ^
             --add-data "core;core" ^
             --add-data "platforms;platforms" ^
@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows-build
-          path: dist/直播录屏.exe
+          path: dist/live-recorder-windows.exe
 
   build-linux:
     runs-on: ubuntu-latest
@@ -80,7 +80,7 @@ jobs:
       - name: Build executable
         run: |
           pyinstaller --noconfirm --onefile --windowed \
-            --name "live-recorder" \
+            --name "live-recorder-linux" \
             --add-data "gui:gui" \
             --add-data "core:core" \
             --add-data "platforms:platforms" \
@@ -100,7 +100,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux-build
-          path: dist/live-recorder
+          path: dist/live-recorder-linux
 
   build-macos:
     runs-on: macos-latest
@@ -121,7 +121,7 @@ jobs:
       - name: Build executable
         run: |
           pyinstaller --noconfirm --onefile --windowed \
-            --name "live-recorder" \
+            --name "live-recorder-macos" \
             --add-data "gui:gui" \
             --add-data "core:core" \
             --add-data "platforms:platforms" \
@@ -141,7 +141,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: macos-build
-          path: dist/live-recorder
+          path: dist/live-recorder-macos
 
   release:
     needs: [build-windows, build-linux, build-macos]
@@ -150,14 +150,19 @@ jobs:
     steps:
       - name: Download all artifacts
         uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: List artifacts
+        run: find artifacts -type f
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            windows-build/直播录屏.exe
-            linux-build/live-recorder
-            macos-build/live-recorder
+            artifacts/windows-build/*
+            artifacts/linux-build/*
+            artifacts/macos-build/*
           generate_release_notes: true
           draft: false
           prerelease: false
